@@ -7,9 +7,11 @@ class AareGuruData {
 }
 
 class AareGuruModel {
+
 	// Aareguru JSON API
 	// See: https://aareguru.existenz.ch/
 	const URL = "http://aareguru.existenz.ch/v2018/current?city=Bern";
+	
 	var aareData = null;
 
   	function initialize()	{

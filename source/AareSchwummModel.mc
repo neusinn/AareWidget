@@ -10,8 +10,8 @@ class AareData {
 class AareSchwummModel {
 
 	// Aareschwumm JSON API
-	// See: http://aare.schwumm.ch/api/
-	const URL = "http://aare.schwumm.ch/api/current";
+	// See: https://aare.schwumm.ch/api/
+	const URL = "https://aare.schwumm.ch/api/current?timeformat=local";
 	
 	var aareData = null;
 	var message = "";
@@ -23,7 +23,7 @@ class AareSchwummModel {
 		}	
 		aareData.temperature = data.get("temperature").toFloat().format("%0.1f");
 		aareData.flow = data.get("flow").toFloat().format("%0i");
-		aareData.height = data.get("height").toFloat().toFloat().format("%0i");
+		aareData.height = data.get("height").toFloat().format("%0i");
 		aareData.date = data.get("date");
 		
 		return aareData;

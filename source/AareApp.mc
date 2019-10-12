@@ -41,7 +41,6 @@ class AareApp extends Application.AppBase {
     	System.println("AareApp.getInitialView()");
         return [ View, Delegate ];
     }
-    
-
+   
 
 }

@@ -15,11 +15,10 @@ class WebRequestDelegate extends WatchUi.BehaviorDelegate {
     }
     
     function onSelect() {
-    	System.println("WebRequestDelegate.onSelect()");
-        makeAPIRequest(url);
+    	System.println("WebRequestDelegate.onSelect() --> update data.");
+        makeAPIRequest();
         return true;
     }
-
     
     function makeAPIRequest() {
 		//Check if Communications is allowed for Widget usage
@@ -51,6 +50,6 @@ class WebRequestDelegate extends WatchUi.BehaviorDelegate {
         	System.println("Request failed\nWith ResponseCode: \n" + responseCode);
         }
     }
-    
+
 
 }
