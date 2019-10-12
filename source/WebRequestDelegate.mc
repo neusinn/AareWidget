@@ -4,32 +4,24 @@ using Toybox.WatchUi;
 class WebRequestDelegate extends WatchUi.BehaviorDelegate {
     
     var notify;
-    var model;
     var url;
     
         // Set up the callback to the view
-    function initialize(handler, model) {
+    function initialize(handler, url) {
+    	self.url = url;
     	System.println("WebRequestDelegate.initialize(), url=" + url);
-    	self.model = model;
-    	self.url = model.URL;
         WatchUi.BehaviorDelegate.initialize();
         notify = handler;
     }
     
-    // Handle menu button press
-    function onMenu() {
-    	System.println("WebRequestDelegate.onMenu()");
-        makeAPIRequests(url);
+    function onSelect() {
+    	System.println("WebRequestDelegate.onSelect()");
+        makeAPIRequest(url);
         return true;
     }
 
-    function onSelect() {
-    	System.println("WebRequestDelegate.onSelect()");
-        makeAPIRequests(url);
-        return true;
-    }
     
-    function makeAPIRequests(url) {
+    function makeAPIRequest() {
 		//Check if Communications is allowed for Widget usage
 		if (Toybox has :Communications) {
 			
@@ -52,10 +44,10 @@ class WebRequestDelegate extends WatchUi.BehaviorDelegate {
 	function onResponse(responseCode, data) {
 		System.println("WebRequestDelegate.OnResponse(), Code:" + responseCode + ", data:" + data);
         if (responseCode == 200) {
-			notify.invoke(model.convert(data));
+			notify.invoke(data);
            	
         } else { 
-         	notify.invoke("Failed to load\nResponseCode: " + responseCode.toString());
+         	notify.invoke("Failed to load: " + responseCode.toString());
         	System.println("Request failed\nWith ResponseCode: \n" + responseCode);
         }
     }
