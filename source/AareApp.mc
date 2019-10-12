@@ -3,10 +3,10 @@ using Toybox.System;
 
 class AareApp extends Application.AppBase {
 
-    hidden var View;
-    hidden var Model;
-    hidden var Delegate;
-    hidden var GlanceView;
+    hidden var mView;
+    hidden var mModel;
+    hidden var mDelegate;
+    hidden var mGlanceView;
 
     function initialize() {
       	System.println("AareApp.initalize()");
@@ -17,12 +17,6 @@ class AareApp extends Application.AppBase {
     function onStart(state) {
     	System.println("AareApp.onStart()");
 		//Model = new AareGuruModel();	
-		Model = new AareSchwummModel();
-		Delegate = new WebRequestDelegate(Model.method(:onReceive), Model.URL);
-		View = new AareView(Model);
-    	GlanceView = new AareGlanceView(Model);
-		
-		Delegate.makeAPIRequest();
     }
 
     // onStop() is called when your application is exiting
@@ -31,15 +25,23 @@ class AareApp extends Application.AppBase {
     }
 
 	// Return the initial glance view of your widget here
+	(:glance)
     function getGlanceView() {
     	System.println("AareApp.getGlanceView()");
-    	return [ GlanceView ];
+    	
+    	mGlanceView = new AareGlanceView();
+    	mModel = new AareSchwummModel(mGlanceView.method(:onReceive));
+    	mDelegate = new AareDelegate(mModel);
+    	return [ mGlanceView];
     }
-    
+
     // Return the initial view of your application here
     function getInitialView() {
     	System.println("AareApp.getInitialView()");
-        return [ View, Delegate ];
+    	mView = new AareView();
+    	mModel = new AareSchwummModel(mView.method(:onReceive));
+    	mDelegate = new AareDelegate(mModel);
+        return [ mView, mDelegate ];
     }
    
 

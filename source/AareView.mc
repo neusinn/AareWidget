@@ -1,16 +1,15 @@
-using Toybox.WatchUi as Ui;
+using Toybox.WatchUi as UI;
 using Toybox.System;
 using Toybox.Graphics as G;
 
-class AareView extends Ui.View {
+class AareView extends UI.View {
 
-	hidden var model;
-	hidden var mMessage = "";
+	hidden var message = "";
+	var aareData = null;
 
-    function initialize(model) {
-     	System.println("AareGlanceView.Initialize()");
-     	self.model = model;
-        Ui.View.initialize();
+    function initialize() {
+     	System.println("AareView.Initialize()");
+        UI.View.initialize();
     }
 
     // Load your resources here
@@ -29,15 +28,15 @@ class AareView extends Ui.View {
     function onUpdate(dc) {
     	System.println("AareView.onUpdate()" + dc);
 
-        var aareData = model.getAareData();
+	    var width = dc.getWidth();
+	    var height = dc.getHeight();
+	        	
+    	dc.setColor(G.COLOR_WHITE, G.COLOR_BLACK);
+	    dc.clear();
+		dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
+        
         if (aareData != null) {
-	        
-	        dc.setColor(G.COLOR_WHITE, G.COLOR_BLACK);
-	        dc.clear();
-			dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
-			
-	        var width = dc.getWidth();
-	        var height = dc.getHeight();
+
 	        var y = 30;
 	        dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, "AARETEMPERATUR", G.TEXT_JUSTIFY_CENTER);
 	        y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
@@ -49,7 +48,10 @@ class AareView extends Ui.View {
 	        dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.height + "m    " + aareData.flow  + "m/s", G.TEXT_JUSTIFY_CENTER);  
 	        
 			dc.drawText(width/2, height - 60, G.FONT_SYSTEM_XTINY, aareData.date, G.TEXT_JUSTIFY_CENTER);  
-        }       
+        
+        } else {
+			dc.drawText(width/2, height/2 , G.FONT_SYSTEM_SMALL, message, G.TEXT_JUSTIFY_RIGHT | G.TEXT_JUSTIFY_VCENTER);
+        }      
     }
     
     // Called when this View is removed from the screen. Save the
@@ -59,5 +61,20 @@ class AareView extends Ui.View {
     	System.println("AareView.onHide()");
     }
 
-
+    function onReceive(data) {
+    	System.println("AareViewl.onReceive()");
+     	if (data instanceof AareData) {
+     		aareData = data;
+        }
+        else if (data instanceof Lang.String) {
+            System.println("Unexpeced data format: " + data);
+            message = data;
+        } else {
+         	System.println("Unexpeced data type: " + data);
+        	message = "Arghh!";
+        }
+        
+        System.println("Do UI update");
+        UI.requestUpdate();
+    }
 }
