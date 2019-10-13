@@ -1,8 +1,55 @@
-# Readme Aaretemperatur
+# Readme Aaretemperatur Widget
 
-This widget will show the temperature of the river Aare in Bern. To swimm in the river is great fun.
+This is a __Garmin ICQ Widget__ target for the Garmin Fenix 5 an 6 Sport Smart Watch.
+This widget will show the temperature of the river Aare in Bern in Switzerland. Swimming in the river Aare is great fun and many locals and tourist like it. 
 
-## Used API
+IMPORTANT: Keep in mind that swimming in the Aare can be dangerous. 
+
+
+## Overview
+The widget shows the temperatur and flow level of the river _Aare_ in Bern.
+The widget will make a WebRequest to the API and uses Mobilephone as proxy. It depends on the datasource of the API service. See below.
+
+__Requirements:__
+
+1. A compatible Garmin device as listed in chapter target device below.
+2. A a connection to mobile phone with running Garmin ICQ app.
+
+
+### Functionality
+
+__Glance View__
+- Shows temperatur in°C
+- Mark if measurement is n/a or older than a day
+
+__View__
+- Shows temperatur in°C
+- Color coding of temperature
+- Flow as text categories
+- timestamp
+- Mark if latest measurement is older than two hours
+
+### Target Device
+- Garmin Fenix 5, 5S, 5 Pro 
+- Garmin Fenix 6, 6Pro, 6S, 6X
+
+## Data sources
 - Aareschwumm API [information](http://aare.schwumm.ch/api/)
-- unused: AareGuru [API](https://aareguru.existenz.ch). The API is not used as the returned data size is to big for the Garmin Fenix watch.
+API service is provided by [Bureau für digitale Existenz](https://bureau.existenz.ch/)
+- The base data is measured and provided by _Bundesamt für Umwelt, Verkehr Energie und Kommunikatione der Schweizerischen Eidgenossenschaft_, [Hydrologie](https://www.hydrodaten.admin.ch/de/index.html?lang=de)
 
+## Screenshots
+
+__Aare Widged GlanceView__
+
+![GlanceView](doc/screenshot/AareGlanceView.png)
+
+__Aare  data View__
+
+![Data View](doc/screenshot/AareViewWatch.png)|
+
+## Resources
+
+### Garmin Connect IQ 
+- Developer [information](https://developer.garmin.com/connect-iq/programmers-guide/)
+- API documentation [SDK](https://developer.garmin.com/connect-iq/api-docs/)
