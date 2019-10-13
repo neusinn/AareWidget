@@ -40,23 +40,42 @@ class AareData {
 		return Lang.format("$1$.$2$.$3$ $4$:$5$", [ date.day, date.month, date.year, date.hour, date.min ]);
 	}  
 	
+	function isActual() {
+		// timestamp is not older than 2 hours.
+		return Time.now().subtract(new Time.Moment(timestamp)).lessThan(new Time.Duration(2 * 3600));
+	}
+	
+	function isToday() {
+		// timestamp is from today.
+		return Time.today().subtract(new Time.Moment(timestamp)).lessThan(new Time.Duration(24 * 3600));
+	}
+	
 	function dateStrComplex() {
-		var moment = new Time.Moment(timestamp);
-		var date = Gregorian.info(moment, Time.FORMAT_SHORT);
-		var isToday = moment.subtract(Time.today()).lessThan(new Time.Duration(24 * 3600));
-		var isActual = Time.now().subtract(moment).lessThan(new Time.Duration(2 * 3600));
-		
+		var date = Gregorian.info(new Time.Moment(timestamp), Time.FORMAT_SHORT);
 		var dateFormated;
-		if (isActual) {
+		
+		if (isActual()) {
 			dateFormated = Lang.format("$1$:$2$", [ date.hour, date.min]);
-		} else if (isToday) {
+		} else if (isToday()) {
 			dateFormated =  Lang.format("$1$:$2$ (!)", [ date.hour, date.min]);
 		} else {
 			dateFormated =  Lang.format("$1$.$2$.$3$ (!) $4$:$5$", [ date.day, date.month, date.year, date.hour, date.min ]);
 		}	
 
 		return dateFormated;
-	}    
+	} 
+	
+	function flowStr() {
+
+		if (flow < 50) { return "sehr wenig";}
+		if (flow < 100) { return "wenig";}
+		if (flow < 150) { return "eher wenig";}
+		if (flow < 200) { return "eher viel";}
+		if (flow < 250) { return "viel";}
+		if (flow < 300) { return "sehr viel";}
+		if (flow < 420) { return "extrem viel";}
+		return "Hochwasser"; //Schadensgrenze überstiegen
+	}
 	    
 }
 
@@ -78,7 +97,7 @@ class AareSchwummModel {
 		makeAPIRequest();
 	}
 	
-    function convert(data) {
+    function fromJson(data) {
    		if (aareData == null) {
         	aareData = new AareData();
 		}	
@@ -106,13 +125,13 @@ class AareSchwummModel {
        			
        		} catch (e instanceof Lang.Exception) {
        			System.println("Exception during WebRequest:" + e.getErrorMessage());
-       		message = "Not available.";
-      		notify.invoke(message);
+       			message = "Exception";
+      			notify.invoke(message);
        		}
        		
        	} else {
-      		System.println("Communication\nnot\npossible");
-      		message = "Communication\nnot possible.";
+      		message = "Keine communication";
+      		System.println(message);
       		notify.invoke(message);
       	}          	
     }
@@ -120,12 +139,12 @@ class AareSchwummModel {
 	function onResponse(responseCode, data) {
 		System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
         if (responseCode == 200) {
-        	aareData = convert(data);
+        	aareData = fromJson(data);
 			notify.invoke(aareData);
            	
         } else { 
-        	message = "Failed to load: " + responseCode;
-        	System.println("AareSchwummModel - Failed to load: " + message);
+        	message = "Service\nnot available";
+        	System.println("AareSchwummModel " + message + " Code:" + responseCode);
          	notify.invoke(message);
         }
     }

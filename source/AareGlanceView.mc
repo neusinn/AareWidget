@@ -5,7 +5,7 @@ using Toybox.Graphics as G;
 (:glance)
 class AareGlanceView extends UI.GlanceView {
 
-	hidden var mMessage = "";
+	hidden var message = "";
 	hidden var aareData = null;
 
     function initialize() {
@@ -29,17 +29,21 @@ class AareGlanceView extends UI.GlanceView {
     function onUpdate(dc) {
     	System.println("AareGlanceView.onUpdate()" + dc);
     	
-    	dc.setColor(G.COLOR_BLUE, G.COLOR_TRANSPARENT);
+    	dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
 
         if (aareData != null) {
-        	mMessage = Lang.format("$1$ °C", [aareData.temperature.format("%0.1f")]);
+        	if (aareData.isToday()) {
+        		message = Lang.format("$1$ °C", [aareData.temperature.format("%0.1f")]);
+        	} else {
+        		message = "~ ~ ~";
+        	}
         
         } else {
-        	mMessage = "Not vailable...";
+        	message = "~";
         }
 
         dc.drawText(0, 6, G.FONT_SYSTEM_XTINY, "AARETEMPERATUR", G.TEXT_JUSTIFY_LEFT);
-        dc.drawText(0, 24, G.FONT_SYSTEM_TINY, mMessage, G.TEXT_JUSTIFY_LEFT);
+        dc.drawText(0, 24, G.FONT_SYSTEM_TINY, message, G.TEXT_JUSTIFY_LEFT);
     }
 
     // Called when this View is removed from the screen. Save the
@@ -50,19 +54,16 @@ class AareGlanceView extends UI.GlanceView {
     }
 
     function onReceive(data) {
-    	System.println("AareView.onReceive()");
+    	System.println("AareGlanceView.onReceive()");
      	if (data instanceof AareData) {
      		aareData = data;
-        }
-        else if (data instanceof Lang.String) {
-            System.println("Unexpeced data format: " + data);
-            message = data;
+
         } else {
-         	System.println("Unexpeced data type: " + data);
-        	message = "Arghh!";
+         	System.println("Unexpeced data : " + data);
+        	message = "Error";
         }
         
-        System.println("Do UI update");
+        System.println("Request UI update");
         UI.requestUpdate();
     }
 }

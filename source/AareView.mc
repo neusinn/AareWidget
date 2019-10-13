@@ -48,12 +48,14 @@ class AareView extends UI.View {
 
 	   		y = y + G.getFontHeight(G.FONT_SYSTEM_NUMBER_HOT) - 10;
 
-	        dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.height.format("%0i") + "m    " + aareData.flow.format("%0i")  + "m/s", G.TEXT_JUSTIFY_CENTER);  
-	        
+			// Aare flow
+	        //dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flow.format("%0i")  + "m³/s", G.TEXT_JUSTIFY_CENTER);  
+			dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flowStr(), G.TEXT_JUSTIFY_CENTER);
+				        
 			dc.drawText(width/2, height - 70, G.FONT_SYSTEM_TINY, aareData.dateStrComplex(), G.TEXT_JUSTIFY_CENTER);  
         
         } else {
-			dc.drawText(width/2, height/2 , G.FONT_SYSTEM_SMALL, message, G.TEXT_JUSTIFY_RIGHT | G.TEXT_JUSTIFY_VCENTER);
+			dc.drawText(width/2, height/2 , G.FONT_SYSTEM_SMALL, message, G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
         }      
     }
     
@@ -65,19 +67,16 @@ class AareView extends UI.View {
     }
 
     function onReceive(data) {
-    	System.println("AareViewl.onReceive()");
+    	System.println("AareView.onReceive()");
      	if (data instanceof AareData) {
      		aareData = data;
-        }
-        else if (data instanceof Lang.String) {
-            System.println("Unexpeced data format: " + data);
-            message = data;
+
         } else {
-         	System.println("Unexpeced data type: " + data);
-        	message = "Arghh!";
+         	System.println("Unexpeced data : " + data);
+        	message = data;
         }
         
-        System.println("Do UI update");
+        System.println("Request UI update");
         UI.requestUpdate();
     }
 }
