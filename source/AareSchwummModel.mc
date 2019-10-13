@@ -1,11 +1,36 @@
 using Toybox.Communications;
 
 (:glance)
-class AareData {	
+class AareData {
+	
 	var date;
 	var temperature;
 	var flow;
 	var height;
+
+
+	// assign a specific color depending on the temperature range
+	function colorOfTemperature() {
+		var t = temperature;
+		var color = Graphics.COLOR_WHITE;
+		if ( t < 16 ) {
+			color = Graphics.COLOR_BLUE;
+			
+		} else if (t >= 16 and t < 19) {
+			color = Graphics.COLOR_GREEN;
+			
+		} else if (t >= 19 and t < 21) {
+			color = Graphics.COLOR_YELLOW;
+			
+		} else if (t >= 21 and t < 23) {
+			color = Graphics.COLOR_ORANGE;
+			
+		} else if (t >= 23 ) {
+			color = Graphics.COLOR_RED;
+		}
+		
+		return color;
+	    } 
 }
 
 (:glance)
@@ -30,9 +55,9 @@ class AareSchwummModel {
    		if (aareData == null) {
         	aareData = new AareData();
 		}	
-		aareData.temperature = data.get("temperature").toFloat().format("%0.1f");
-		aareData.flow = data.get("flow").toFloat().format("%0i");
-		aareData.height = data.get("height").toFloat().format("%0i");
+		aareData.temperature = data.get("temperature").toFloat();
+		aareData.flow = data.get("flow").toFloat();
+		aareData.height = data.get("height").toFloat();
 		aareData.date = data.get("date");
 		
 		return aareData;
@@ -80,7 +105,7 @@ class AareSchwummModel {
     
     function getAareData() {
     	return aareData;
-    }    
+    }  
 
-    
+       
 }

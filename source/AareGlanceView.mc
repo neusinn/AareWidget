@@ -32,7 +32,7 @@ class AareGlanceView extends UI.GlanceView {
     	dc.setColor(G.COLOR_BLUE, G.COLOR_TRANSPARENT);
 
         if (aareData != null) {
-        	mMessage = Lang.format("$1$ °C", [aareData.temperature]);
+        	mMessage = Lang.format("$1$ °C", [aareData.temperature.format("%0.1f")]);
         
         } else {
         	mMessage = "Not vailable...";

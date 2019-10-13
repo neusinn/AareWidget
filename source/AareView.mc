@@ -41,13 +41,16 @@ class AareView extends UI.View {
 	        dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, "AARETEMPERATUR", G.TEXT_JUSTIFY_CENTER);
 	        y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
 	        
-	        dc.drawText(width/2 - 10, y, G.FONT_SYSTEM_NUMBER_HOT, aareData.temperature, G.TEXT_JUSTIFY_CENTER);
+	        dc.setColor(aareData.colorOfTemperature(), G.COLOR_TRANSPARENT);
+	        dc.drawText(width/2 - 10, y, G.FONT_SYSTEM_NUMBER_HOT, aareData.temperature.format("%0.1f"), G.TEXT_JUSTIFY_CENTER);
 	        dc.drawText(width - 50, y + 18, G.FONT_SYSTEM_SMALL, "°C", G.TEXT_JUSTIFY_RIGHT);
+	        dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);	        
+
 	   		y = y + G.getFontHeight(G.FONT_SYSTEM_NUMBER_HOT) - 10;
 
-	        dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.height + "m    " + aareData.flow  + "m/s", G.TEXT_JUSTIFY_CENTER);  
+	        dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.height.format("%0i") + "m    " + aareData.flow.format("%0i")  + "m/s", G.TEXT_JUSTIFY_CENTER);  
 	        
-			dc.drawText(width/2, height - 60, G.FONT_SYSTEM_XTINY, aareData.date, G.TEXT_JUSTIFY_CENTER);  
+			dc.drawText(width/2, height - 70, G.FONT_SYSTEM_TINY, aareData.date, G.TEXT_JUSTIFY_CENTER);  
         
         } else {
 			dc.drawText(width/2, height/2 , G.FONT_SYSTEM_SMALL, message, G.TEXT_JUSTIFY_RIGHT | G.TEXT_JUSTIFY_VCENTER);
