@@ -50,7 +50,7 @@ class AareView extends UI.View {
 
 	        dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.height.format("%0i") + "m    " + aareData.flow.format("%0i")  + "m/s", G.TEXT_JUSTIFY_CENTER);  
 	        
-			dc.drawText(width/2, height - 70, G.FONT_SYSTEM_TINY, aareData.date, G.TEXT_JUSTIFY_CENTER);  
+			dc.drawText(width/2, height - 70, G.FONT_SYSTEM_TINY, aareData.dateStrComplex(), G.TEXT_JUSTIFY_CENTER);  
         
         } else {
 			dc.drawText(width/2, height/2 , G.FONT_SYSTEM_SMALL, message, G.TEXT_JUSTIFY_RIGHT | G.TEXT_JUSTIFY_VCENTER);
