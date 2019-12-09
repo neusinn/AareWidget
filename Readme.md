@@ -48,8 +48,12 @@ __Aare  data View__
 
 ![Data View](doc/screenshot/AareViewWatch.png)|
 
-## Resources
+## Development
 
-### Garmin Connect IQ 
+How to get startet with __Garmin Connect IQ__:
+1. Install SDK 
+2. Configure your development environment.
+
+
 - Developer [information](https://developer.garmin.com/connect-iq/programmers-guide/)
 - API documentation [SDK](https://developer.garmin.com/connect-iq/api-docs/)

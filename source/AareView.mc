@@ -46,13 +46,13 @@ class AareView extends UI.View {
 	        dc.drawText(width - 50, y + 18, G.FONT_SYSTEM_SMALL, "°C", G.TEXT_JUSTIFY_RIGHT);
 	        dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);	        
 
-	   		y = y + G.getFontHeight(G.FONT_SYSTEM_NUMBER_HOT) - 10;
+	   		y = y + G.getFontHeight(G.FONT_SYSTEM_NUMBER_HOT) - 20;
 
 			// Aare flow
 	        //dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flow.format("%0i")  + "m³/s", G.TEXT_JUSTIFY_CENTER);  
 			dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flowStr(), G.TEXT_JUSTIFY_CENTER);
 				        
-			dc.drawText(width/2, height - 70, G.FONT_SYSTEM_TINY, aareData.dateStrComplex(), G.TEXT_JUSTIFY_CENTER);  
+			dc.drawText(width/2, height - 70, G.FONT_SYSTEM_TINY, "@ " + aareData.dateStrComplex(), G.TEXT_JUSTIFY_CENTER);  
         
         } else {
 			dc.drawText(width/2, height/2 , G.FONT_SYSTEM_SMALL, message, G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
