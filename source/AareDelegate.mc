@@ -13,7 +13,7 @@ class AareDelegate extends UI.BehaviorDelegate {
     }
     
     function onSelect() {
-    	System.println("WebRequestDelegate.onSelect() --> update data.");
+    	// update data
         model.makeAPIRequest();
         return true;
     }

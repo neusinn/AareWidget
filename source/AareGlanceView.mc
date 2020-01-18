@@ -9,26 +9,21 @@ class AareGlanceView extends UI.GlanceView {
 	hidden var aareData = null;
 
     function initialize() {
-     	System.println("AareGlanceView.Initialize()");
         UI.GlanceView.initialize();
     }
 
     // Load your resources here
     function onLayout(dc) {
-    	System.println("AareGlanceView.onLayout()");
     }
 
     // Called when this View is brought to the foreground. Restore
     // Restore the state of this View and prepare it to be shown. 
     // This includes loading resources into memory.
     function onShow() {
-    	System.println("AareGlanceView.onShow()");
     }
 
     // Update the view
     function onUpdate(dc) {
-    	System.println("AareGlanceView.onUpdate()" + dc);
-    	
     	dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
 
         if (aareData != null) {
@@ -50,11 +45,9 @@ class AareGlanceView extends UI.GlanceView {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
-    	System.println("AareGlanceView.onHide()");
     }
 
     function onReceive(data) {
-    	System.println("AareGlanceView.onReceive()");
      	if (data instanceof AareData) {
      		aareData = data;
 
@@ -63,7 +56,6 @@ class AareGlanceView extends UI.GlanceView {
         	message = "Error";
         }
         
-        System.println("Request UI update");
         UI.requestUpdate();
     }
 }

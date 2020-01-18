@@ -8,26 +8,21 @@ class AareView extends UI.View {
 	var aareData = null;
 
     function initialize() {
-     	System.println("AareView.Initialize()");
         UI.View.initialize();
     }
 
     // Load your resources here
     function onLayout(dc) {
-    	System.println("AareView.onLayout()");
     }
 
     // Called when this View is brought to the foreground. Restore
     // Restore the state of this View and prepare it to be shown. 
     // This includes loading resources into memory.
     function onShow() {
-    	System.println("AareView.onShow()");
     }
 
     // Update the view
     function onUpdate(dc) {
-    	System.println("AareView.onUpdate()" + dc);
-
 	    var width = dc.getWidth();
 	    var height = dc.getHeight();
 	        	
@@ -46,7 +41,7 @@ class AareView extends UI.View {
 	        dc.drawText(width - 50, y + 18, G.FONT_SYSTEM_SMALL, "°C", G.TEXT_JUSTIFY_RIGHT);
 	        dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);	        
 
-	   		y = y + G.getFontHeight(G.FONT_SYSTEM_NUMBER_HOT) - 20;
+	   		y = y - 20 + G.getFontHeight(G.FONT_SYSTEM_NUMBER_HOT);
 
 			// Aare flow
 	        //dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flow.format("%0i")  + "m³/s", G.TEXT_JUSTIFY_CENTER);  
@@ -63,20 +58,16 @@ class AareView extends UI.View {
     // state of this View here. This includes freeing resources from
     // memory.
     function onHide() {
-    	System.println("AareView.onHide()");
     }
 
     function onReceive(data) {
-    	System.println("AareView.onReceive()");
      	if (data instanceof AareData) {
      		aareData = data;
 
         } else {
-         	System.println("Unexpeced data : " + data);
         	message = data;
         }
         
-        System.println("Request UI update");
         UI.requestUpdate();
     }
 }

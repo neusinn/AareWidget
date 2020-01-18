@@ -30,26 +30,31 @@ class AareData {
 		return color;
 	} 
 	
+
 	function timeStr() {	
 		var date = Gregorian.info(new Time.Moment(timestamp), Time.FORMAT_SHORT);
 		return Lang.format("$1$:$2$", [ date.hour, date.min.format("%02d")]);
 	}
 	
+
 	function dateStr() {
 		var date = Gregorian.info(new Time.Moment(timestamp), Time.FORMAT_SHORT);
 		return Lang.format("$1$.$2$.$3$ $4$:$5$", [ date.day, date.month.format("%02d"), date.year, date.hour, date.min.format("%02d") ]);
 	}  
 	
+
 	function isActual() {
 		// timestamp is not older than 2 hours.
 		return Time.now().subtract(new Time.Moment(timestamp)).lessThan(new Time.Duration(2 * 3600));
 	}
 	
+
 	function isToday() {
 		// timestamp is from today.
 		return Time.today().subtract(new Time.Moment(timestamp)).lessThan(new Time.Duration(24 * 3600));
 	}
 	
+
 	function dateStrComplex() {
 		var date = Gregorian.info(new Time.Moment(timestamp), Time.FORMAT_SHORT);
 		var dateFormated;
@@ -65,8 +70,8 @@ class AareData {
 		return dateFormated;
 	} 
 	
-	function flowStr() {
 
+	function flowStr() {
 		if (flow < 50) { return "sehr wenig";}
 		if (flow < 100) { return "wenig";}
 		if (flow < 150) { return "eher wenig";}
@@ -79,6 +84,8 @@ class AareData {
 	    
 }
 
+
+
 (:glance)
 class AareSchwummModel {
 
@@ -90,6 +97,7 @@ class AareSchwummModel {
 	var message = "";
 	var aareData = null;
 	
+
 	function initialize(handler) {
 		System.println("AareSchwummModel.initalize()");
 		notify = handler;
@@ -97,6 +105,7 @@ class AareSchwummModel {
 		makeAPIRequest();
 	}
 	
+
     function fromJson(data) {
    		if (aareData == null) {
         	aareData = new AareData();
@@ -108,6 +117,7 @@ class AareSchwummModel {
 		
 		return aareData;
     }
+ 
     
     function makeAPIRequest() {
 		//Check if Communications is allowed for Widget usage
@@ -136,6 +146,7 @@ class AareSchwummModel {
       	}          	
     }
 
+
 	function onResponse(responseCode, data) {
 		System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
         if (responseCode == 200) {
@@ -144,10 +155,10 @@ class AareSchwummModel {
            	
         } else { 
         	message = "Service\nnot available";
-        	System.println("AareSchwummModel " + message + " Code:" + responseCode);
          	notify.invoke(message);
         }
     }
+
     
     function getAareData() {
     	return aareData;
