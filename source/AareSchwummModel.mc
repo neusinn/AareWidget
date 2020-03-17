@@ -91,6 +91,7 @@ class AareSchwummModel {
 
 	// Aareschwumm JSON API
 	// See: https://aare.schwumm.ch/api/
+	// Example: {"date":1579456200,"temperature":6.2,"flow":49.86,"height":501.57,"temperature_text":"cold","source":"BAFU","timeformat":"unix"}
 	const URL = "https://aare.schwumm.ch/api/current?timeformat=unix";
 	
 	var notify = null;

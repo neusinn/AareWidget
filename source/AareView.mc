@@ -33,7 +33,7 @@ class AareView extends UI.View {
         if (aareData != null) {
 
 	        var y = 30;
-	        dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, "AARETEMPERATUR", G.TEXT_JUSTIFY_CENTER);
+	        dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, "AARE TEMPERATUR", G.TEXT_JUSTIFY_CENTER);
 	        y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
 	        
 	        dc.setColor(aareData.colorOfTemperature(), G.COLOR_TRANSPARENT);

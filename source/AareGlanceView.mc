@@ -30,14 +30,14 @@ class AareGlanceView extends UI.GlanceView {
         	if (aareData.isToday()) {
         		message = Lang.format("$1$ °C", [aareData.temperature.format("%0.1f")]);
         	} else {
-        		message = "~ ~ ~";
+        		message = "~ ! ~";
         	}
         
         } else {
-        	message = "~";
+        	message = "~ n/a ~";
         }
 
-        dc.drawText(0, 6, G.FONT_SYSTEM_XTINY, "AARETEMPERATUR", G.TEXT_JUSTIFY_LEFT);
+        dc.drawText(0, 6, G.FONT_SYSTEM_XTINY, "AARE TEMPERATUR", G.TEXT_JUSTIFY_LEFT);
         dc.drawText(0, 24, G.FONT_SYSTEM_TINY, message, G.TEXT_JUSTIFY_LEFT);
     }
 
