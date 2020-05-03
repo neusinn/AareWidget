@@ -9,7 +9,6 @@ class AareApp extends Application.AppBase {
     hidden var mGlanceView;
 
     function initialize() {
-      	System.println("AareApp.initalize()");
         AppBase.initialize();
     }
     

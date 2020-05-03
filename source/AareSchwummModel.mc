@@ -1,6 +1,7 @@
 using Toybox.Communications;
 using Toybox.Time;
 using Toybox.Time.Gregorian;
+using Toybox.WatchUi;
 
 (:glance)
 class AareData {
@@ -72,14 +73,14 @@ class AareData {
 	
 
 	function flowStr() {
-		if (flow < 50) { return "sehr wenig";}
-		if (flow < 100) { return "wenig";}
-		if (flow < 150) { return "eher wenig";}
-		if (flow < 200) { return "eher viel";}
-		if (flow < 250) { return "viel";}
-		if (flow < 300) { return "sehr viel";}
-		if (flow < 420) { return "extrem viel";}
-		return "Hochwasser"; //Schadensgrenze überstiegen
+		if (flow < 50) { return WatchUi.loadResource(Rez.Strings.flow_very_little);}
+		if (flow < 100) { return WatchUi.loadResource(Rez.Strings.flow_little);}
+		if (flow < 150) { return WatchUi.loadResource(Rez.Strings.flow_not_much);}
+		if (flow < 200) { return WatchUi.loadResource(Rez.Strings.flow_rater_much);}
+		if (flow < 250) { return WatchUi.loadResource(Rez.Strings.flow_much);}
+		if (flow < 300) { return WatchUi.loadResource(Rez.Strings.flow_very_much);}
+		if (flow < 420) { return WatchUi.loadResource(Rez.Strings.flow_very_little);}
+		return WatchUi.loadResource(Rez.Strings.flow_extremly); //Schadensgrenze überstiegen
 	}
 	    
 }
@@ -94,13 +95,18 @@ class AareSchwummModel {
 	// Example: {"date":1579456200,"temperature":6.2,"flow":49.86,"height":501.57,"temperature_text":"cold","source":"BAFU","timeformat":"unix"}
 	const URL = "https://aare.schwumm.ch/api/current?timeformat=unix";
 	
+	// Optional API
+	// BAFU hydrology data of rivers in Switzerland from hydrodaten.admin.ch.
+	// See: https://api.existenz.ch/docs/apiv1#/hydro/get_hydro_latest
+	// Location Bern_Schönausteg= 2135
+	// https://api.existenz.ch/apiv1/hydro/latest?locations=2135&parameters=temperature%2Cflow%2Cheight&format=table&app=AareTemperatur.widget&version=1.0
+	
 	var notify = null;
 	var message = "";
 	var aareData = null;
 	
 
 	function initialize(handler) {
-		System.println("AareSchwummModel.initalize()");
 		notify = handler;
 		makeAPIRequest();
 	}
@@ -130,17 +136,17 @@ class AareSchwummModel {
          		};
          		
          	try {
-         	    System.println("Request: " + URL);	
+         	    System.println("AareSchwummModel Request: " + URL);	
        			Communications.makeWebRequest(URL, params, options, method(:onResponse));
        			
-       		} catch (e instanceof Lang.Exception) {
+       		} catch (e) {
        			System.println("Exception during WebRequest:" + e.getErrorMessage());
        			message = "Exception";
       			notify.invoke(message);
        		}
        		
        	} else {
-      		message = "Keine communication";
+      		message = "no communication";
       		System.println(message);
       		notify.invoke(message);
       	}          	
@@ -149,13 +155,13 @@ class AareSchwummModel {
 
 	function onResponse(responseCode, data) {
 		System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
-        if (responseCode == 200) {
+		
+		if (responseCode == 200) {
         	aareData = fromJson(data);
 			notify.invoke(aareData);
-           	
-        } else { 
-        	message = "Service\nnot available";
-         	notify.invoke(message);
+		
+		} else { 
+        	notify.invoke(responseCode);
         }
     }
 

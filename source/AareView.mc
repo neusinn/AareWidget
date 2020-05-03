@@ -6,8 +6,16 @@ class AareView extends UI.View {
 
 	hidden var message = "";
 	var aareData = null;
+	
+	hidden var sAppTitle;
+	hidden var sExCommNotAvailable;
+	hidden var sServiceNotAvailable;
+
 
     function initialize() {
+        sAppTitle = UI.loadResource(Rez.Strings.view_title);
+    	sExCommNotAvailable = WatchUi.loadResource(Rez.Strings.exception_communication_not_available);
+        sServiceNotAvailable = WatchUi.loadResource(Rez.Strings.exception_service_not_available);      
         UI.View.initialize();
     }
 
@@ -30,12 +38,12 @@ class AareView extends UI.View {
 	    dc.clear();
 		dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
         
+	    var y = 30;
+	    dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, sAppTitle, G.TEXT_JUSTIFY_CENTER);
+	    y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
+        
         if (aareData != null) {
 
-	        var y = 30;
-	        dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, "AARE TEMPERATUR", G.TEXT_JUSTIFY_CENTER);
-	        y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
-	        
 	        dc.setColor(aareData.colorOfTemperature(), G.COLOR_TRANSPARENT);
 	        dc.drawText(width/2 - 10, y, G.FONT_SYSTEM_NUMBER_HOT, aareData.temperature.format("%0.1f"), G.TEXT_JUSTIFY_CENTER);
 	        dc.drawText(width - 50, y + 18, G.FONT_SYSTEM_SMALL, "°C", G.TEXT_JUSTIFY_RIGHT);
@@ -49,12 +57,12 @@ class AareView extends UI.View {
 				        
 			if (! aareData.isActual()) {
 				dc.setColor(G.COLOR_RED, G.COLOR_TRANSPARENT);
-				dc.drawText(width/2, height - 40, G.FONT_SYSTEM_TINY, aareData.messureDate(), G.TEXT_JUSTIFY_CENTER);  
+				dc.drawText(width/2, height - 40, G.FONT_SYSTEM_TINY, aareData.messureDate(), G.TEXT_JUSTIFY_CENTER);  			
 			}
-        
+			        
         } else {
 			dc.drawText(width/2, height/2 , G.FONT_SYSTEM_SMALL, message, G.TEXT_JUSTIFY_CENTER | G.TEXT_JUSTIFY_VCENTER);
-        }      
+        }
     }
     
     // Called when this View is removed from the screen. Save the
@@ -68,9 +76,16 @@ class AareView extends UI.View {
      		aareData = data;
 
         } else {
-        	message = data;
+        	System.println("View: Unexpeced data : " + data);
+        	if (data == Communications.BLE_CONNECTION_UNAVAILABLE) {
+            	message = sExCommNotAvailable;
+        	} else { 
+        		message = sServiceNotAvailable;
+        	}
         }
         
         UI.requestUpdate();
     }
+
+
 }
