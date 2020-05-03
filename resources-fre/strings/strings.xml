@@ -1,0 +1,19 @@
+<strings>
+    <string id="AppName">Aare température</string>
+    
+    <string id="view_title" scope="foreground">AARE TEMPERATURE</string>
+    <string id="glance_title" scope="glance">AARE TEMP.</string>
+    
+    <string id="flow_very_little">très peu</string>
+    <string id="flow_little">peu</string>
+    <string id="flow_not_much">assez peu</string>
+    <string id="flow_rater_much">plutôt beaucoup</string>
+    <string id="flow_much">beaucoup</string>
+    <string id="flow_very_much">très beaucoup</string>
+    <string id="flow_extremly">extrêmement</string>
+    <string id="flow_flood">Inondation!</string>
+    
+    <string id="exception_communication_not_available">Aucun lien</string>
+    <string id="exception_service_not_available">Pas de Service</string>
+
+</strings>
