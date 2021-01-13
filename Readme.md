@@ -2,7 +2,7 @@
 
 This is a __Garmin ICQ Widget__ target for the Garmin Fenix 5 an 6 Sport Smart Watch.
 This widget will show the temperature of the river Aare in Bern in Switzerland. Swimming in the river Aare is great fun and many locals and tourist like it. 
-
+![Aaretemperatur Cover](doc/AareBernUrbanSwimmingCover.jpg)
 IMPORTANT: Keep in mind that swimming in the Aare can be dangerous. 
 
 
@@ -42,11 +42,11 @@ The API service is provided by [Bureau für digitale Existenz](https://bureau.ex
 
 __Aare Widged GlanceView__
 
-![GlanceView](doc/screenshot/AareGlanceView.png)
+![GlanceView](doc/screenshot/Aare-Widget_GlanceView.png)
 
 __Aare  data View__
 
-![Data View](doc/screenshot/AareViewWatch.png)|
+![Data View](doc/screenshot/Aare-Widget_View.png)|
 
 ## Development
 
