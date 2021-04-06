@@ -63,7 +63,7 @@ class AareData {
 		if (isActual()) {
 			dateFormated = Lang.format("$1$:$2$", [ date.hour, date.min.format("%02d")]);
 		} else if (isToday()) {
-			dateFormated =  Lang.format("$1$:$2", [ date.hour, date.min.format("%02d")]);
+			dateFormated = Lang.format("$1$:$2$", [ date.hour, date.min.format("%02d")]);
 		} else {
 			dateFormated =  Lang.format("$1$.$2$.$3$ $4$:$5$", [ date.day, date.month.format("%02d"), date.year, date.hour, date.min.format("%02d") ]);
 		}	
