@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <debugInfo>
+<manifest filename="/Users/vonallmen/dev/workspaceEclipse/Aare/manifest.xml"/>
 <pcToLineNum>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="17" pc="268438750" symbol="initialize"/>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="18" pc="268438754" symbol="initialize"/>
@@ -191,126 +192,142 @@
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="37" pc="268438582" symbol="getInitialView"/>
 </pcToLineNum>
 <symbolTable>
-<entry id="8388644" module="true" symbol="System"/>
-<entry field="true" id="24" symbol="model"/>
-<entry id="18" object="true" symbol="Util"/>
-<entry id="8389124" method="true" symbol="onUpdate"/>
-<entry field="true" id="62" symbol="exception_service_not_available"/>
-<entry id="8388637" module="true" symbol="Communications"/>
-<entry id="23" object="true" symbol="AareApp"/>
-<entry field="true" id="63" symbol="flow_flood"/>
-<entry id="20" object="true" symbol="AareData"/>
-<entry field="true" id="8388611" module="true" symbol="Toybox"/>
-<entry id="8388645" module="true" symbol="Time"/>
-<entry field="true" id="55" symbol="flow_not_much"/>
-<entry id="19" object="true" symbol="AareView"/>
-<entry field="true" id="65" symbol="flow_rater_much"/>
-<entry id="8389619" method="true" symbol="onSelect"/>
-<entry id="8388770" module="true" object="true" symbol="Strings"/>
-<entry field="true" id="50" symbol="sExCommNotAvailable"/>
-<entry id="8389280" method="true" symbol="getInitialView"/>
-<entry id="37" method="true" symbol="getAareData"/>
-<entry field="true" id="26" symbol="glance_title"/>
-<entry field="true" id="57" symbol="flow_little"/>
-<entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry id="8389123" method="true" symbol="onShow"/>
-<entry id="8388924" module="true" symbol="Gregorian"/>
-<entry id="40" method="true" symbol="timeStr"/>
-<entry id="16" object="true" symbol="AareGuruModel"/>
-<entry id="39" method="true" symbol="colorOfTemperature"/>
-<entry id="45" method="true" symbol="flowStr"/>
-<entry id="8388702" method="true" symbol="initialize"/>
-<entry field="true" id="59" symbol="AppName"/>
-<entry field="true" id="46" symbol="sAppTitle"/>
-<entry field="true" id="61" symbol="flow_extremly"/>
-<entry field="true" id="8389250" symbol="timestamp"/>
-<entry id="8391459" module="true" object="true" symbol="GlanceRez"/>
-<entry field="true" id="8388962" symbol="temperature"/>
-<entry id="17" object="true" symbol="AareDelegate"/>
-<entry id="42" method="true" symbol="isActual"/>
-<entry id="8389108" method="true" symbol="onResponse"/>
-<entry field="true" id="67" symbol="aare"/>
-<entry field="true" id="53" symbol="LauncherIcon"/>
-<entry id="8391457" method="true" symbol="getGlanceView"/>
-<entry id="8388786" method="true" symbol="method"/>
-<entry id="8388648" module="true" symbol="WatchUi"/>
-<entry id="8389281" method="true" symbol="onStop"/>
-<entry field="true" id="31" symbol="URL"/>
-<entry id="8388771" module="true" object="true" symbol="Drawables"/>
-<entry field="true" id="38" symbol="flow"/>
-<entry id="8389122" method="true" symbol="onLayout"/>
-<entry field="true" id="68" symbol="aarePast"/>
-<entry id="8389279" method="true" symbol="onStart"/>
-<entry field="true" id="29" symbol="mDelegate"/>
-<entry field="true" id="32" symbol="notify"/>
-<entry id="66" method="true" symbol="printDictionalry"/>
-<entry id="49" method="true" symbol="convert"/>
-<entry field="true" id="51" symbol="sServiceNotAvailable"/>
-<entry field="true" id="58" symbol="flow_much"/>
 <entry field="true" id="54" symbol="view_title"/>
-<entry field="true" id="60" symbol="exception_communication_not_available"/>
-<entry id="35" method="true" symbol="fromJson"/>
-<entry id="43" method="true" symbol="isToday"/>
-<entry field="true" id="8389067" symbol="height"/>
-<entry id="41" method="true" symbol="dateStr"/>
-<entry field="true" id="28" symbol="mModel"/>
-<entry id="44" method="true" symbol="messureDate"/>
-<entry id="25" module="true" symbol="Layouts"/>
-<entry field="true" id="33" symbol="message"/>
-<entry id="8389125" method="true" symbol="onHide"/>
-<entry field="true" id="56" symbol="flow_very_much"/>
-<entry id="8390088" module="true" object="true" symbol="JsonData"/>
-<entry id="8389844" symbol="responseType"/>
-<entry field="true" id="64" symbol="flow_very_little"/>
-<entry id="36" method="true" symbol="makeAPIRequest"/>
-<entry id="21" object="true" symbol="AareSchwummModel"/>
-<entry id="52" module="true" symbol="Menus"/>
-<entry id="47" method="true" symbol="onReceive"/>
-<entry id="48" method="true" symbol="makeAPIRequests"/>
+<entry id="20" object="true" symbol="AareData"/>
+<entry field="true" id="68" symbol="aarePast"/>
+<entry id="5" module="true" symbol="globals/GlanceRez/Layouts"/>
+<entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry field="true" id="30" symbol="mGlanceView"/>
-<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="16" object="true" symbol="AareGuruModel"/>
+<entry field="true" id="51" symbol="sServiceNotAvailable"/>
+<entry id="3" module="true" symbol="globals/GlanceRez/Drawables"/>
+<entry id="10" module="true" symbol="globals/Rez/Menus"/>
+<entry id="18" object="true" symbol="Util"/>
+<entry id="41" method="true" symbol="dateStr"/>
+<entry field="true" id="26" symbol="glance_title"/>
 <entry id="15" object="true" symbol="AareGuruData"/>
-<entry field="true" id="34" symbol="aareData"/>
-<entry field="true" id="69" symbol="weather"/>
-<entry id="22" object="true" symbol="AareGlanceView"/>
+<entry field="true" id="65" symbol="flow_rater_much"/>
+<entry id="66" method="true" symbol="printDictionalry"/>
+<entry field="true" id="8389250" symbol="timestamp"/>
+<entry id="8388924" module="true" symbol="Gregorian"/>
+<entry field="true" id="8388611" module="true" symbol="Toybox"/>
+<entry id="8389108" method="true" symbol="onResponse"/>
 <entry field="true" id="27" symbol="mView"/>
+<entry field="true" id="34" symbol="aareData"/>
+<entry id="6" module="true" symbol="globals/GlanceRez/JsonData"/>
+<entry field="true" id="8388962" symbol="temperature"/>
+<entry id="43" method="true" symbol="isToday"/>
+<entry field="true" id="59" symbol="AppName"/>
+<entry id="35" method="true" symbol="fromJson"/>
+<entry id="17" object="true" symbol="AareDelegate"/>
+<entry field="true" id="31" symbol="URL"/>
+<entry id="14" module="true" symbol="globals/Rez/Strings"/>
+<entry id="8388772" module="true" object="true" symbol="Fonts"/>
+<entry id="8388648" module="true" symbol="WatchUi"/>
+<entry id="8" module="true" symbol="globals/Rez"/>
+<entry id="8389124" method="true" symbol="onUpdate"/>
+<entry field="true" id="64" symbol="flow_very_little"/>
+<entry id="8388771" module="true" object="true" symbol="Drawables"/>
+<entry field="true" id="8389067" symbol="height"/>
+<entry id="52" module="true" symbol="Menus"/>
+<entry id="12" module="true" symbol="globals/Rez/Layouts"/>
+<entry id="8389122" method="true" symbol="onLayout"/>
+<entry id="2" module="true" symbol="globals/GlanceRez"/>
+<entry field="true" id="46" symbol="sAppTitle"/>
+<entry field="true" id="55" symbol="flow_not_much"/>
+<entry field="true" id="57" symbol="flow_little"/>
+<entry id="13" module="true" symbol="globals/Rez/JsonData"/>
+<entry id="8391459" module="true" object="true" symbol="GlanceRez"/>
+<entry id="37" method="true" symbol="getAareData"/>
+<entry id="8388637" module="true" symbol="Communications"/>
+<entry id="9" module="true" symbol="globals/Rez/Drawables"/>
+<entry id="19" object="true" symbol="AareView"/>
+<entry field="true" id="56" symbol="flow_very_much"/>
+<entry id="49" method="true" symbol="convert"/>
+<entry id="8389844" symbol="responseType"/>
+<entry field="true" id="50" symbol="sExCommNotAvailable"/>
+<entry id="22" object="true" symbol="AareGlanceView"/>
+<entry id="8388786" method="true" symbol="method"/>
+<entry id="8388644" module="true" symbol="System"/>
+<entry field="true" id="28" symbol="mModel"/>
+<entry id="8389619" method="true" symbol="onSelect"/>
+<entry id="8388645" module="true" symbol="Time"/>
+<entry id="8388769" module="true" object="true" symbol="Rez"/>
+<entry id="47" method="true" symbol="onReceive"/>
+<entry id="39" method="true" symbol="colorOfTemperature"/>
+<entry id="4" module="true" symbol="globals/GlanceRez/Fonts"/>
+<entry field="true" id="32" symbol="notify"/>
+<entry id="44" method="true" symbol="messureDate"/>
+<entry id="8390088" module="true" object="true" symbol="JsonData"/>
+<entry field="true" id="33" symbol="message"/>
+<entry field="true" id="53" symbol="LauncherIcon"/>
+<entry id="8388610" symbol="statics"/>
+<entry id="8389123" method="true" symbol="onShow"/>
+<entry id="48" method="true" symbol="makeAPIRequests"/>
+<entry field="true" id="61" symbol="flow_extremly"/>
+<entry id="40" method="true" symbol="timeStr"/>
+<entry id="8389350" module="true" symbol="globals"/>
+<entry id="8388770" module="true" object="true" symbol="Strings"/>
+<entry id="8388702" method="true" symbol="initialize"/>
+<entry field="true" id="24" symbol="model"/>
+<entry id="8389279" method="true" symbol="onStart"/>
+<entry id="23" object="true" symbol="AareApp"/>
+<entry id="45" method="true" symbol="flowStr"/>
+<entry id="42" method="true" symbol="isActual"/>
+<entry id="36" method="true" symbol="makeAPIRequest"/>
+<entry field="true" id="67" symbol="aare"/>
+<entry id="8389280" method="true" symbol="getInitialView"/>
+<entry id="8389281" method="true" symbol="onStop"/>
+<entry field="true" id="60" symbol="exception_communication_not_available"/>
+<entry field="true" id="38" symbol="flow"/>
+<entry id="25" module="true" symbol="Layouts"/>
+<entry id="7" module="true" symbol="globals/GlanceRez/Strings"/>
+<entry field="true" id="69" symbol="weather"/>
+<entry field="true" id="62" symbol="exception_service_not_available"/>
+<entry id="21" object="true" symbol="AareSchwummModel"/>
+<entry id="11" module="true" symbol="globals/Rez/Fonts"/>
+<entry id="8391457" method="true" symbol="getGlanceView"/>
+<entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="29" symbol="mDelegate"/>
 <entry id="8388635" module="true" symbol="Application"/>
+<entry field="true" id="58" symbol="flow_much"/>
+<entry field="true" id="63" symbol="flow_flood"/>
 </symbolTable>
 <localVars>
 <entry endPc="268439022" name="options" stackId="3" startPc="268438819"/>
 <entry endPc="268439022" name="params" stackId="2" startPc="268438819"/>
-<entry endPc="268439049" name="url" stackId="1" startPc="268438798"/>
-<entry endPc="268439134" name="responseCode" stackId="1" startPc="268439049"/>
-<entry endPc="268439134" name="data" stackId="2" startPc="268439049"/>
-<entry endPc="268439353" name="data" stackId="1" startPc="268439134"/>
-<entry endPc="268435493" name="model" stackId="1" startPc="268435456"/>
+<entry arg="true" endPc="268439049" name="url" stackId="1" startPc="268438798"/>
+<entry arg="true" endPc="268439134" name="responseCode" stackId="1" startPc="268439049"/>
+<entry arg="true" endPc="268439134" name="data" stackId="2" startPc="268439049"/>
+<entry arg="true" endPc="268439353" name="data" stackId="1" startPc="268439134"/>
+<entry arg="true" endPc="268435493" name="model" stackId="1" startPc="268435456"/>
 <entry endPc="268439490" name="i" stackId="4" startPc="268439415"/>
 <entry endPc="268439490" name="keys" stackId="3" startPc="268439378"/>
 <entry endPc="268439493" name="dictString" stackId="2" startPc="268439357"/>
-<entry endPc="268439494" name="dict" stackId="1" startPc="268439353"/>
-<entry endPc="268439662" name="dc" stackId="1" startPc="268439657"/>
+<entry arg="true" endPc="268439494" name="dict" stackId="1" startPc="268439353"/>
+<entry arg="true" endPc="268439662" name="dc" stackId="1" startPc="268439657"/>
 <entry endPc="268440401" name="height" stackId="3" startPc="268439671"/>
 <entry endPc="268440401" name="width" stackId="2" startPc="268439671"/>
 <entry endPc="268440401" name="y" stackId="4" startPc="268439671"/>
-<entry endPc="268440402" name="dc" stackId="1" startPc="268439667"/>
-<entry endPc="268440534" name="data" stackId="1" startPc="268440407"/>
+<entry arg="true" endPc="268440402" name="dc" stackId="1" startPc="268439667"/>
+<entry arg="true" endPc="268440534" name="data" stackId="1" startPc="268440407"/>
 <entry endPc="268435744" name="color" stackId="2" startPc="268435523"/>
 <entry endPc="268435744" name="t" stackId="1" startPc="268435523"/>
 <entry endPc="268435887" name="date" stackId="1" startPc="268435749"/>
 <entry endPc="268436092" name="date" stackId="1" startPc="268435892"/>
 <entry endPc="268436702" name="dateFormated" stackId="2" startPc="268436305"/>
 <entry endPc="268436702" name="date" stackId="1" startPc="268436305"/>
-<entry endPc="268437166" name="handler" stackId="1" startPc="268437139"/>
-<entry endPc="268437373" name="data" stackId="1" startPc="268437166"/>
+<entry arg="true" endPc="268437166" name="handler" stackId="1" startPc="268437139"/>
+<entry arg="true" endPc="268437373" name="data" stackId="1" startPc="268437166"/>
 <entry endPc="268437617" name="options" stackId="2" startPc="268437394"/>
 <entry endPc="268437617" name="params" stackId="1" startPc="268437394"/>
-<entry endPc="268437807" name="responseCode" stackId="1" startPc="268437686"/>
-<entry endPc="268437807" name="data" stackId="2" startPc="268437686"/>
-<entry endPc="268437896" name="dc" stackId="1" startPc="268437891"/>
-<entry endPc="268438187" name="dc" stackId="1" startPc="268437901"/>
-<entry endPc="268438277" name="data" stackId="1" startPc="268438192"/>
-<entry endPc="268438305" name="state" stackId="1" startPc="268438300"/>
-<entry endPc="268438310" name="state" stackId="1" startPc="268438305"/>
+<entry arg="true" endPc="268437807" name="responseCode" stackId="1" startPc="268437686"/>
+<entry arg="true" endPc="268437807" name="data" stackId="2" startPc="268437686"/>
+<entry arg="true" endPc="268437896" name="dc" stackId="1" startPc="268437891"/>
+<entry arg="true" endPc="268438187" name="dc" stackId="1" startPc="268437901"/>
+<entry arg="true" endPc="268438277" name="data" stackId="1" startPc="268438192"/>
+<entry arg="true" endPc="268438305" name="state" stackId="1" startPc="268438300"/>
+<entry arg="true" endPc="268438310" name="state" stackId="1" startPc="268438305"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
@@ -326,17 +343,17 @@
 <dataEntry offset="670" parentId="globals" symbolId="AareSchwummModel" type="class"/>
 <dataEntry offset="781" parentId="globals" symbolId="AareData" type="class"/>
 <dataEntry offset="916" parentId="globals" symbolId="AareGlanceView" type="class"/>
-<dataEntry offset="1965" parentId="globals" symbolId="AareGuruModel" type="class"/>
-<dataEntry offset="2052" parentId="globals" symbolId="AareView" type="class"/>
-<dataEntry offset="2179" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="2258" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="2297" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="2328" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="2359" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="2390" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="2421" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="2556" parentId="globals" symbolId="Util" type="class"/>
-<dataEntry offset="2611" parentId="globals" symbolId="AareGuruData" type="class"/>
+<dataEntry offset="1955" parentId="globals" symbolId="AareGuruModel" type="class"/>
+<dataEntry offset="2042" parentId="globals" symbolId="AareView" type="class"/>
+<dataEntry offset="2169" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="2248" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="2287" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="2318" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="2349" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="2380" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="2411" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="2546" parentId="globals" symbolId="Util" type="class"/>
+<dataEntry offset="2601" parentId="globals" symbolId="AareGuruData" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="AareGuruModel">

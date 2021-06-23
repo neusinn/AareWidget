@@ -79,8 +79,8 @@ class AareData {
 		if (flow < 200) { return WatchUi.loadResource(Rez.Strings.flow_rater_much);}
 		if (flow < 250) { return WatchUi.loadResource(Rez.Strings.flow_much);}
 		if (flow < 300) { return WatchUi.loadResource(Rez.Strings.flow_very_much);}
-		if (flow < 420) { return WatchUi.loadResource(Rez.Strings.flow_very_little);}
-		return WatchUi.loadResource(Rez.Strings.flow_extremly); //Schadensgrenze überstiegen
+		if (flow < 420) { return WatchUi.loadResource(Rez.Strings.flow_extremly);}
+		return WatchUi.loadResource(Rez.Strings.flow_flood); //Schadensgrenze überstiegen
 	}
 	    
 }
