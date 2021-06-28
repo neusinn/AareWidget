@@ -13,6 +13,8 @@
     <string id="flow_extremly">extremly much</string>
     <string id="flow_flood">Flood!</string>
     
+    <string id="water_level">WATER</string>
+    
     <string id="exception_communication_not_available">Connection\nnot available</string>
     <string id="exception_service_not_available">Service\nnot available</string>
 

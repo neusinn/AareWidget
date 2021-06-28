@@ -2,212 +2,238 @@
 <debugInfo>
 <manifest filename="/Users/vonallmen/dev/workspaceEclipse/Aare/manifest.xml"/>
 <pcToLineNum>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="17" pc="268438750" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="18" pc="268438754" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="19" pc="268438777" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="22" pc="268438798" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="24" pc="268438802" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="25" pc="268438819" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="27" pc="268438828" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="28" pc="268438831" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="32" pc="268438883" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="33" pc="268438883" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="34" pc="268438909" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="36" pc="268438975" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="40" pc="268439025" symbol="makeAPIRequests"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="44" pc="268439049" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="45" pc="268439053" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="46" pc="268439064" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="47" pc="268439090" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="50" pc="268439107" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="54" pc="268439134" symbol="convert"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="55" pc="268439138" symbol="convert"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="56" pc="268439151" symbol="convert"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="58" pc="268439184" symbol="convert"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="59" pc="268439237" symbol="convert"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="60" pc="268439290" symbol="convert"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="18" pc="268439182" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="19" pc="268439186" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="4" lineNum="20" pc="268439209" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="23" pc="268439230" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="25" pc="268439234" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="26" pc="268439251" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="28" pc="268439260" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="29" pc="268439263" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="33" pc="268439315" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="34" pc="268439315" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="35" pc="268439341" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="37" pc="268439407" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="5" lineNum="41" pc="268439457" symbol="makeAPIRequests"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="45" pc="268439481" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="46" pc="268439485" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="47" pc="268439496" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="48" pc="268439522" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="6" lineNum="51" pc="268439539" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="55" pc="268439566" symbol="convert"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="56" pc="268439570" symbol="convert"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="57" pc="268439583" symbol="convert"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="59" pc="268439616" symbol="convert"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="60" pc="268439669" symbol="convert"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="61" pc="268439699" symbol="convert"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGuruModel.mc" id="7" lineNum="62" pc="268439761" symbol="convert"/>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareDelegate.mc" id="9" lineNum="10" pc="268435456" symbol="initialize"/>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareDelegate.mc" id="9" lineNum="11" pc="268435460" symbol="initialize"/>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareDelegate.mc" id="9" lineNum="12" pc="268435470" symbol="initialize"/>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareDelegate.mc" id="10" lineNum="15" pc="268435493" symbol="onSelect"/>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareDelegate.mc" id="10" lineNum="17" pc="268435497" symbol="onSelect"/>
 <entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareDelegate.mc" id="10" lineNum="18" pc="268435515" symbol="onSelect"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="5" pc="268439353" symbol="printDictionalry"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="6" pc="268439357" symbol="printDictionalry"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="7" pc="268439364" symbol="printDictionalry"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="9" pc="268439378" symbol="printDictionalry"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="10" pc="268439391" symbol="printDictionalry"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="11" pc="268439415" symbol="printDictionalry"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="15" pc="268439497" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="16" pc="268439501" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="17" pc="268439544" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="18" pc="268439589" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="19" pc="268439634" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="15" lineNum="23" pc="268439657" symbol="onLayout"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="16" lineNum="29" pc="268439662" symbol="onShow"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="33" pc="268439667" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="34" pc="268439671" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="35" pc="268439684" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="37" pc="268439697" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="38" pc="268439733" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="39" pc="268439745" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="41" pc="268439781" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="42" pc="268439788" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="43" pc="268439842" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="45" pc="268439874" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="47" pc="268439887" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="48" pc="268439928" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="49" pc="268440008" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="50" pc="268440065" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="52" pc="268440101" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="56" pc="268440133" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="58" pc="268440196" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="59" pc="268440217" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="60" pc="268440253" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="64" pc="268440328" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="18" lineNum="71" pc="268440402" symbol="onHide"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="74" pc="268440407" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="75" pc="268440411" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="76" pc="268440425" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="79" pc="268440438" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="80" pc="268440462" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="81" pc="268440482" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="83" pc="268440501" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="87" pc="268440517" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="16" pc="268435519" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="17" pc="268435523" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="18" pc="268435533" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="19" pc="268435549" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="20" pc="268435560" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="21" pc="268435579" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="22" pc="268435604" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="23" pc="268435623" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="24" pc="268435648" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="25" pc="268435667" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="26" pc="268435692" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="27" pc="268435711" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="28" pc="268435722" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="31" pc="268435741" symbol="colorOfTemperature"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="22" lineNum="35" pc="268435745" symbol="timeStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="22" lineNum="36" pc="268435749" symbol="timeStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="22" lineNum="37" pc="268435812" symbol="timeStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="23" lineNum="41" pc="268435888" symbol="dateStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="23" lineNum="42" pc="268435892" symbol="dateStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="23" lineNum="43" pc="268435955" symbol="dateStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="24" lineNum="47" pc="268436093" symbol="isActual"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="24" lineNum="49" pc="268436097" symbol="isActual"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="25" lineNum="53" pc="268436197" symbol="isToday"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="25" lineNum="55" pc="268436201" symbol="isToday"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="59" pc="268436301" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="60" pc="268436305" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="61" pc="268436368" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="63" pc="268436375" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="64" pc="268436389" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="65" pc="268436468" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="66" pc="268436482" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="68" pc="268436561" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="71" pc="268436699" symbol="messureDate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="75" pc="268436703" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="76" pc="268436707" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="76" pc="268436724" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="77" pc="268436763" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="77" pc="268436780" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="78" pc="268436819" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="78" pc="268436836" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="79" pc="268436875" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="79" pc="268436892" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="80" pc="268436931" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="80" pc="268436948" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="81" pc="268436987" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="81" pc="268437004" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="82" pc="268437043" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="82" pc="268437060" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="83" pc="268437099" symbol="flowStr"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="29" lineNum="109" pc="268437139" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="29" lineNum="110" pc="268437143" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="29" lineNum="111" pc="268437153" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="115" pc="268437166" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="116" pc="268437170" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="117" pc="268437183" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="119" pc="268437216" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="120" pc="268437255" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="121" pc="268437294" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="122" pc="268437333" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="124" pc="268437363" symbol="fromJson"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="128" pc="268437373" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="130" pc="268437377" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="132" pc="268437394" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="133" pc="268437397" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="138" pc="268437445" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="139" pc="268437445" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="140" pc="268437477" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="143" pc="268437531" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="144" pc="268437566" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="145" pc="268437579" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="149" pc="268437620" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="150" pc="268437633" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="151" pc="268437659" symbol="makeAPIRequest"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="156" pc="268437686" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="157" pc="268437690" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="159" pc="268437725" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="160" pc="268437736" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="161" pc="268437757" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="164" pc="268437786" symbol="onResponse"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="33" lineNum="169" pc="268437807" symbol="getAareData"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="33" lineNum="170" pc="268437811" symbol="getAareData"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="35" lineNum="12" pc="268437821" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="35" lineNum="13" pc="268437825" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="35" lineNum="14" pc="268437868" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="36" lineNum="18" pc="268437891" symbol="onLayout"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="37" lineNum="24" pc="268437896" symbol="onShow"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="28" pc="268437901" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="29" pc="268437905" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="31" pc="268437941" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="32" pc="268437954" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="33" pc="268437974" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="36" pc="268438049" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="41" pc="268438065" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="44" pc="268438078" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="45" pc="268438132" symbol="onUpdate"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="51" pc="268438187" symbol="onHide"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="40" lineNum="54" pc="268438192" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="40" lineNum="55" pc="268438196" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="40" lineNum="56" pc="268438210" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="40" lineNum="59" pc="268438223" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="40" lineNum="60" pc="268438247" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="40" lineNum="63" pc="268438260" symbol="onReceive"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="42" lineNum="11" pc="268438277" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="42" lineNum="12" pc="268438281" symbol="initialize"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="43" lineNum="16" pc="268438300" symbol="onStart"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="44" lineNum="20" pc="268438305" symbol="onStop"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="45" lineNum="25" pc="268438310" symbol="getGlanceView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="45" lineNum="26" pc="268438314" symbol="getGlanceView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="45" lineNum="27" pc="268438344" symbol="getGlanceView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="45" lineNum="28" pc="268438396" symbol="getGlanceView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="45" lineNum="29" pc="268438434" symbol="getGlanceView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="33" pc="268438458" symbol="getInitialView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="34" pc="268438462" symbol="getInitialView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="35" pc="268438492" symbol="getInitialView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="36" pc="268438544" symbol="getInitialView"/>
-<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="37" pc="268438582" symbol="getInitialView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="5" pc="268439792" symbol="printDictionalry"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="6" pc="268439796" symbol="printDictionalry"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="7" pc="268439803" symbol="printDictionalry"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="9" pc="268439817" symbol="printDictionalry"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="10" pc="268439830" symbol="printDictionalry"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/other/Util.mc" id="12" lineNum="11" pc="268439854" symbol="printDictionalry"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="16" pc="268439936" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="17" pc="268439940" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="18" pc="268439983" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="19" pc="268440026" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="20" pc="268440071" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="14" lineNum="21" pc="268440116" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="15" lineNum="25" pc="268440139" symbol="onLayout"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="16" lineNum="31" pc="268440144" symbol="onShow"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="35" pc="268440149" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="36" pc="268440153" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="37" pc="268440166" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="39" pc="268440179" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="40" pc="268440215" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="41" pc="268440227" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="43" pc="268440263" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="44" pc="268440270" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="45" pc="268440324" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="47" pc="268440356" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="49" pc="268440369" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="50" pc="268440410" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="51" pc="268440490" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="53" pc="268440547" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="56" pc="268440579" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="58" pc="268440615" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="59" pc="268440678" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="61" pc="268440760" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="62" pc="268440781" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="63" pc="268440817" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="65" pc="268440889" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="66" pc="268440912" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="67" pc="268440953" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="17" lineNum="72" pc="268441045" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="18" lineNum="79" pc="268441119" symbol="onHide"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="82" pc="268441124" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="83" pc="268441128" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="84" pc="268441142" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="87" pc="268441155" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="88" pc="268441179" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="89" pc="268441199" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="91" pc="268441218" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareView.mc" id="19" lineNum="95" pc="268441234" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="17" pc="268435519" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="18" pc="268435523" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="19" pc="268435533" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="20" pc="268435549" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="21" pc="268435560" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="22" pc="268435579" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="23" pc="268435604" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="24" pc="268435614" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="25" pc="268435639" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="26" pc="268435658" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="27" pc="268435683" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="28" pc="268435693" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="29" pc="268435718" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="30" pc="268435737" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="31" pc="268435762" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="32" pc="268435781" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="33" pc="268435792" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="21" lineNum="36" pc="268435811" symbol="colorOfTemperature"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="22" lineNum="40" pc="268435815" symbol="timeStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="22" lineNum="41" pc="268435819" symbol="timeStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="22" lineNum="42" pc="268435882" symbol="timeStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="23" lineNum="46" pc="268435958" symbol="dateStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="23" lineNum="47" pc="268435962" symbol="dateStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="23" lineNum="48" pc="268436025" symbol="dateStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="24" lineNum="52" pc="268436163" symbol="isActual"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="24" lineNum="54" pc="268436167" symbol="isActual"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="25" lineNum="58" pc="268436267" symbol="isToday"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="25" lineNum="60" pc="268436271" symbol="isToday"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="64" pc="268436371" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="65" pc="268436375" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="66" pc="268436438" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="68" pc="268436445" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="69" pc="268436459" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="70" pc="268436538" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="71" pc="268436552" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="73" pc="268436631" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="26" lineNum="76" pc="268436769" symbol="messureDate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="80" pc="268436773" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="81" pc="268436777" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="81" pc="268436794" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="82" pc="268436833" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="82" pc="268436850" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="83" pc="268436889" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="83" pc="268436906" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="84" pc="268436945" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="84" pc="268436962" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="85" pc="268437001" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="85" pc="268437018" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="86" pc="268437057" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="86" pc="268437074" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="87" pc="268437113" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="87" pc="268437130" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="27" lineNum="88" pc="268437169" symbol="flowStr"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="29" lineNum="121" pc="268437209" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="29" lineNum="122" pc="268437213" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="29" lineNum="123" pc="268437223" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="127" pc="268437236" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="128" pc="268437240" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="129" pc="268437253" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="131" pc="268437286" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="132" pc="268437325" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="133" pc="268437364" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="134" pc="268437403" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="30" lineNum="136" pc="268437433" symbol="fromJson"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="139" pc="268437443" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="140" pc="268437447" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="141" pc="268437460" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="144" pc="268437493" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="145" pc="268437511" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="146" pc="268437518" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="147" pc="268437559" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="149" pc="268437594" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="150" pc="268437612" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="151" pc="268437619" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="152" pc="268437660" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="154" pc="268437695" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="155" pc="268437713" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="156" pc="268437720" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="157" pc="268437761" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="159" pc="268437793" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="31" lineNum="162" pc="268437821" symbol="fromText"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="166" pc="268437831" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="168" pc="268437835" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="170" pc="268437852" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="171" pc="268437855" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="177" pc="268437903" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="179" pc="268437903" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="182" pc="268437957" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="183" pc="268437992" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="184" pc="268438005" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="188" pc="268438046" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="189" pc="268438059" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="32" lineNum="190" pc="268438085" symbol="makeAPIRequest"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="33" lineNum="195" pc="268438112" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="33" lineNum="198" pc="268438116" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="33" lineNum="200" pc="268438127" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="33" lineNum="201" pc="268438148" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="33" lineNum="204" pc="268438177" symbol="onResponse"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="34" lineNum="209" pc="268438198" symbol="getAareData"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareSchwummModel.mc" id="34" lineNum="210" pc="268438202" symbol="getAareData"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="36" lineNum="12" pc="268438212" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="36" lineNum="13" pc="268438216" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="36" lineNum="14" pc="268438259" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="37" lineNum="18" pc="268438282" symbol="onLayout"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="38" lineNum="24" pc="268438287" symbol="onShow"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="28" pc="268438292" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="29" pc="268438296" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="30" pc="268438332" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="32" pc="268438386" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="33" pc="268438399" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="34" pc="268438419" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="35" pc="268438491" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="38" pc="268438535" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="43" pc="268438551" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="39" lineNum="46" pc="268438564" symbol="onUpdate"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="40" lineNum="52" pc="268438619" symbol="onHide"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="41" lineNum="55" pc="268438624" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="41" lineNum="56" pc="268438628" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="41" lineNum="57" pc="268438642" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="41" lineNum="60" pc="268438655" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="41" lineNum="61" pc="268438679" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareGlanceView.mc" id="41" lineNum="64" pc="268438692" symbol="onReceive"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="43" lineNum="11" pc="268438709" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="43" lineNum="12" pc="268438713" symbol="initialize"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="44" lineNum="16" pc="268438732" symbol="onStart"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="45" lineNum="20" pc="268438737" symbol="onStop"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="25" pc="268438742" symbol="getGlanceView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="26" pc="268438746" symbol="getGlanceView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="27" pc="268438776" symbol="getGlanceView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="28" pc="268438828" symbol="getGlanceView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="46" lineNum="29" pc="268438866" symbol="getGlanceView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="47" lineNum="33" pc="268438890" symbol="getInitialView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="47" lineNum="34" pc="268438894" symbol="getInitialView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="47" lineNum="35" pc="268438924" symbol="getInitialView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="47" lineNum="36" pc="268438976" symbol="getInitialView"/>
+<entry filename="/Users/vonallmen/dev/workspaceEclipse/Aare/source/AareApp.mc" id="47" lineNum="37" pc="268439014" symbol="getInitialView"/>
 </pcToLineNum>
 <symbolTable>
-<entry field="true" id="54" symbol="view_title"/>
+<entry field="true" id="57" symbol="view_title"/>
 <entry id="20" object="true" symbol="AareData"/>
-<entry field="true" id="68" symbol="aarePast"/>
+<entry field="true" id="72" symbol="aarePast"/>
 <entry id="5" module="true" symbol="globals/GlanceRez/Layouts"/>
 <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
 <entry field="true" id="30" symbol="mGlanceView"/>
 <entry id="16" object="true" symbol="AareGuruModel"/>
-<entry field="true" id="51" symbol="sServiceNotAvailable"/>
+<entry field="true" id="54" symbol="sServiceNotAvailable"/>
 <entry id="3" module="true" symbol="globals/GlanceRez/Drawables"/>
 <entry id="10" module="true" symbol="globals/Rez/Menus"/>
 <entry id="18" object="true" symbol="Util"/>
-<entry id="41" method="true" symbol="dateStr"/>
+<entry id="43" method="true" symbol="dateStr"/>
 <entry field="true" id="26" symbol="glance_title"/>
 <entry id="15" object="true" symbol="AareGuruData"/>
-<entry field="true" id="65" symbol="flow_rater_much"/>
-<entry id="66" method="true" symbol="printDictionalry"/>
+<entry field="true" id="69" symbol="flow_rater_much"/>
+<entry id="70" method="true" symbol="printDictionalry"/>
 <entry field="true" id="8389250" symbol="timestamp"/>
 <entry id="8388924" module="true" symbol="Gregorian"/>
 <entry field="true" id="8388611" module="true" symbol="Toybox"/>
@@ -216,8 +242,8 @@
 <entry field="true" id="34" symbol="aareData"/>
 <entry id="6" module="true" symbol="globals/GlanceRez/JsonData"/>
 <entry field="true" id="8388962" symbol="temperature"/>
-<entry id="43" method="true" symbol="isToday"/>
-<entry field="true" id="59" symbol="AppName"/>
+<entry id="45" method="true" symbol="isToday"/>
+<entry field="true" id="62" symbol="AppName"/>
 <entry id="35" method="true" symbol="fromJson"/>
 <entry id="17" object="true" symbol="AareDelegate"/>
 <entry field="true" id="31" symbol="URL"/>
@@ -226,26 +252,26 @@
 <entry id="8388648" module="true" symbol="WatchUi"/>
 <entry id="8" module="true" symbol="globals/Rez"/>
 <entry id="8389124" method="true" symbol="onUpdate"/>
-<entry field="true" id="64" symbol="flow_very_little"/>
+<entry field="true" id="68" symbol="flow_very_little"/>
 <entry id="8388771" module="true" object="true" symbol="Drawables"/>
 <entry field="true" id="8389067" symbol="height"/>
-<entry id="52" module="true" symbol="Menus"/>
+<entry id="55" module="true" symbol="Menus"/>
 <entry id="12" module="true" symbol="globals/Rez/Layouts"/>
 <entry id="8389122" method="true" symbol="onLayout"/>
 <entry id="2" module="true" symbol="globals/GlanceRez"/>
-<entry field="true" id="46" symbol="sAppTitle"/>
-<entry field="true" id="55" symbol="flow_not_much"/>
-<entry field="true" id="57" symbol="flow_little"/>
+<entry field="true" id="48" symbol="sAppTitle"/>
+<entry field="true" id="58" symbol="flow_not_much"/>
+<entry field="true" id="60" symbol="flow_little"/>
 <entry id="13" module="true" symbol="globals/Rez/JsonData"/>
 <entry id="8391459" module="true" object="true" symbol="GlanceRez"/>
-<entry id="37" method="true" symbol="getAareData"/>
+<entry id="38" method="true" symbol="getAareData"/>
 <entry id="8388637" module="true" symbol="Communications"/>
 <entry id="9" module="true" symbol="globals/Rez/Drawables"/>
 <entry id="19" object="true" symbol="AareView"/>
-<entry field="true" id="56" symbol="flow_very_much"/>
-<entry id="49" method="true" symbol="convert"/>
+<entry field="true" id="59" symbol="flow_very_much"/>
+<entry id="51" method="true" symbol="convert"/>
 <entry id="8389844" symbol="responseType"/>
-<entry field="true" id="50" symbol="sExCommNotAvailable"/>
+<entry field="true" id="53" symbol="sExCommNotAvailable"/>
 <entry id="22" object="true" symbol="AareGlanceView"/>
 <entry id="8388786" method="true" symbol="method"/>
 <entry id="8388644" module="true" symbol="System"/>
@@ -253,81 +279,87 @@
 <entry id="8389619" method="true" symbol="onSelect"/>
 <entry id="8388645" module="true" symbol="Time"/>
 <entry id="8388769" module="true" object="true" symbol="Rez"/>
-<entry id="47" method="true" symbol="onReceive"/>
-<entry id="39" method="true" symbol="colorOfTemperature"/>
+<entry id="49" method="true" symbol="onReceive"/>
+<entry id="41" method="true" symbol="colorOfTemperature"/>
 <entry id="4" module="true" symbol="globals/GlanceRez/Fonts"/>
 <entry field="true" id="32" symbol="notify"/>
-<entry id="44" method="true" symbol="messureDate"/>
+<entry id="46" method="true" symbol="messureDate"/>
 <entry id="8390088" module="true" object="true" symbol="JsonData"/>
 <entry field="true" id="33" symbol="message"/>
-<entry field="true" id="53" symbol="LauncherIcon"/>
+<entry field="true" id="52" symbol="sWaterLevel"/>
+<entry field="true" id="56" symbol="LauncherIcon"/>
 <entry id="8388610" symbol="statics"/>
 <entry id="8389123" method="true" symbol="onShow"/>
-<entry id="48" method="true" symbol="makeAPIRequests"/>
-<entry field="true" id="61" symbol="flow_extremly"/>
-<entry id="40" method="true" symbol="timeStr"/>
+<entry id="50" method="true" symbol="makeAPIRequests"/>
+<entry field="true" id="64" symbol="flow_extremly"/>
+<entry field="true" id="67" symbol="water_level"/>
+<entry id="42" method="true" symbol="timeStr"/>
 <entry id="8389350" module="true" symbol="globals"/>
 <entry id="8388770" module="true" object="true" symbol="Strings"/>
 <entry id="8388702" method="true" symbol="initialize"/>
 <entry field="true" id="24" symbol="model"/>
 <entry id="8389279" method="true" symbol="onStart"/>
 <entry id="23" object="true" symbol="AareApp"/>
-<entry id="45" method="true" symbol="flowStr"/>
-<entry id="42" method="true" symbol="isActual"/>
-<entry id="36" method="true" symbol="makeAPIRequest"/>
-<entry field="true" id="67" symbol="aare"/>
+<entry id="47" method="true" symbol="flowStr"/>
+<entry id="44" method="true" symbol="isActual"/>
+<entry id="37" method="true" symbol="makeAPIRequest"/>
+<entry field="true" id="71" symbol="aare"/>
 <entry id="8389280" method="true" symbol="getInitialView"/>
 <entry id="8389281" method="true" symbol="onStop"/>
-<entry field="true" id="60" symbol="exception_communication_not_available"/>
-<entry field="true" id="38" symbol="flow"/>
+<entry field="true" id="63" symbol="exception_communication_not_available"/>
+<entry field="true" id="39" symbol="flow"/>
 <entry id="25" module="true" symbol="Layouts"/>
 <entry id="7" module="true" symbol="globals/GlanceRez/Strings"/>
-<entry field="true" id="69" symbol="weather"/>
-<entry field="true" id="62" symbol="exception_service_not_available"/>
+<entry id="36" method="true" symbol="fromText"/>
+<entry field="true" id="73" symbol="weather"/>
+<entry field="true" id="65" symbol="exception_service_not_available"/>
 <entry id="21" object="true" symbol="AareSchwummModel"/>
 <entry id="11" module="true" symbol="globals/Rez/Fonts"/>
 <entry id="8391457" method="true" symbol="getGlanceView"/>
 <entry id="8389125" method="true" symbol="onHide"/>
+<entry field="true" id="40" symbol="forecast2h"/>
 <entry field="true" id="29" symbol="mDelegate"/>
 <entry id="8388635" module="true" symbol="Application"/>
-<entry field="true" id="58" symbol="flow_much"/>
-<entry field="true" id="63" symbol="flow_flood"/>
+<entry field="true" id="61" symbol="flow_much"/>
+<entry field="true" id="66" symbol="flow_flood"/>
 </symbolTable>
 <localVars>
-<entry endPc="268439022" name="options" stackId="3" startPc="268438819"/>
-<entry endPc="268439022" name="params" stackId="2" startPc="268438819"/>
-<entry arg="true" endPc="268439049" name="url" stackId="1" startPc="268438798"/>
-<entry arg="true" endPc="268439134" name="responseCode" stackId="1" startPc="268439049"/>
-<entry arg="true" endPc="268439134" name="data" stackId="2" startPc="268439049"/>
-<entry arg="true" endPc="268439353" name="data" stackId="1" startPc="268439134"/>
+<entry endPc="268439454" name="options" stackId="3" startPc="268439251"/>
+<entry endPc="268439454" name="params" stackId="2" startPc="268439251"/>
+<entry arg="true" endPc="268439481" name="url" stackId="1" startPc="268439230"/>
+<entry arg="true" endPc="268439566" name="responseCode" stackId="1" startPc="268439481"/>
+<entry arg="true" endPc="268439566" name="data" stackId="2" startPc="268439481"/>
+<entry arg="true" endPc="268439792" name="data" stackId="1" startPc="268439566"/>
 <entry arg="true" endPc="268435493" name="model" stackId="1" startPc="268435456"/>
-<entry endPc="268439490" name="i" stackId="4" startPc="268439415"/>
-<entry endPc="268439490" name="keys" stackId="3" startPc="268439378"/>
-<entry endPc="268439493" name="dictString" stackId="2" startPc="268439357"/>
-<entry arg="true" endPc="268439494" name="dict" stackId="1" startPc="268439353"/>
-<entry arg="true" endPc="268439662" name="dc" stackId="1" startPc="268439657"/>
-<entry endPc="268440401" name="height" stackId="3" startPc="268439671"/>
-<entry endPc="268440401" name="width" stackId="2" startPc="268439671"/>
-<entry endPc="268440401" name="y" stackId="4" startPc="268439671"/>
-<entry arg="true" endPc="268440402" name="dc" stackId="1" startPc="268439667"/>
-<entry arg="true" endPc="268440534" name="data" stackId="1" startPc="268440407"/>
-<entry endPc="268435744" name="color" stackId="2" startPc="268435523"/>
-<entry endPc="268435744" name="t" stackId="1" startPc="268435523"/>
-<entry endPc="268435887" name="date" stackId="1" startPc="268435749"/>
-<entry endPc="268436092" name="date" stackId="1" startPc="268435892"/>
-<entry endPc="268436702" name="dateFormated" stackId="2" startPc="268436305"/>
-<entry endPc="268436702" name="date" stackId="1" startPc="268436305"/>
-<entry arg="true" endPc="268437166" name="handler" stackId="1" startPc="268437139"/>
-<entry arg="true" endPc="268437373" name="data" stackId="1" startPc="268437166"/>
-<entry endPc="268437617" name="options" stackId="2" startPc="268437394"/>
-<entry endPc="268437617" name="params" stackId="1" startPc="268437394"/>
-<entry arg="true" endPc="268437807" name="responseCode" stackId="1" startPc="268437686"/>
-<entry arg="true" endPc="268437807" name="data" stackId="2" startPc="268437686"/>
-<entry arg="true" endPc="268437896" name="dc" stackId="1" startPc="268437891"/>
-<entry arg="true" endPc="268438187" name="dc" stackId="1" startPc="268437901"/>
-<entry arg="true" endPc="268438277" name="data" stackId="1" startPc="268438192"/>
-<entry arg="true" endPc="268438305" name="state" stackId="1" startPc="268438300"/>
-<entry arg="true" endPc="268438310" name="state" stackId="1" startPc="268438305"/>
+<entry endPc="268439929" name="i" stackId="4" startPc="268439854"/>
+<entry endPc="268439929" name="keys" stackId="3" startPc="268439817"/>
+<entry endPc="268439932" name="dictString" stackId="2" startPc="268439796"/>
+<entry arg="true" endPc="268439933" name="dict" stackId="1" startPc="268439792"/>
+<entry arg="true" endPc="268440144" name="dc" stackId="1" startPc="268440139"/>
+<entry endPc="268441118" name="height" stackId="3" startPc="268440153"/>
+<entry endPc="268441118" name="width" stackId="2" startPc="268440153"/>
+<entry endPc="268441118" name="y" stackId="4" startPc="268440153"/>
+<entry arg="true" endPc="268441119" name="dc" stackId="1" startPc="268440149"/>
+<entry arg="true" endPc="268441251" name="data" stackId="1" startPc="268441124"/>
+<entry endPc="268435814" name="color" stackId="2" startPc="268435523"/>
+<entry endPc="268435814" name="t" stackId="1" startPc="268435523"/>
+<entry endPc="268435957" name="date" stackId="1" startPc="268435819"/>
+<entry endPc="268436162" name="date" stackId="1" startPc="268435962"/>
+<entry endPc="268436772" name="dateFormated" stackId="2" startPc="268436375"/>
+<entry endPc="268436772" name="date" stackId="1" startPc="268436375"/>
+<entry arg="true" endPc="268437236" name="handler" stackId="1" startPc="268437209"/>
+<entry arg="true" endPc="268437443" name="data" stackId="1" startPc="268437236"/>
+<entry endPc="268437830" name="idx" stackId="2" startPc="268437447"/>
+<entry arg="true" endPc="268437831" name="data" stackId="1" startPc="268437443"/>
+<entry endPc="268438043" name="options" stackId="2" startPc="268437852"/>
+<entry endPc="268438043" name="params" stackId="1" startPc="268437852"/>
+<entry arg="true" endPc="268438198" name="responseCode" stackId="1" startPc="268438112"/>
+<entry arg="true" endPc="268438198" name="data" stackId="2" startPc="268438112"/>
+<entry arg="true" endPc="268438287" name="dc" stackId="1" startPc="268438282"/>
+<entry arg="true" endPc="268438619" name="dc" stackId="1" startPc="268438292"/>
+<entry arg="true" endPc="268438709" name="data" stackId="1" startPc="268438624"/>
+<entry arg="true" endPc="268438737" name="state" stackId="1" startPc="268438732"/>
+<entry arg="true" endPc="268438742" name="state" stackId="1" startPc="268438737"/>
 </localVars>
 <annotations/>
 <dataEntryOffsetMappings>
@@ -341,19 +373,19 @@
 <dataEntry offset="520" parentId="GlanceRez" symbolId="Strings" type="module"/>
 <dataEntry offset="559" parentId="globals" symbolId="AareApp" type="class"/>
 <dataEntry offset="670" parentId="globals" symbolId="AareSchwummModel" type="class"/>
-<dataEntry offset="781" parentId="globals" symbolId="AareData" type="class"/>
-<dataEntry offset="916" parentId="globals" symbolId="AareGlanceView" type="class"/>
-<dataEntry offset="1955" parentId="globals" symbolId="AareGuruModel" type="class"/>
-<dataEntry offset="2042" parentId="globals" symbolId="AareView" type="class"/>
-<dataEntry offset="2169" parentId="globals" symbolId="Rez" type="module"/>
-<dataEntry offset="2248" parentId="Rez" symbolId="Drawables" type="module"/>
-<dataEntry offset="2287" parentId="Rez" symbolId="Menus" type="module"/>
-<dataEntry offset="2318" parentId="Rez" symbolId="Fonts" type="module"/>
-<dataEntry offset="2349" parentId="Rez" symbolId="Layouts" type="module"/>
-<dataEntry offset="2380" parentId="Rez" symbolId="JsonData" type="module"/>
-<dataEntry offset="2411" parentId="Rez" symbolId="Strings" type="module"/>
-<dataEntry offset="2546" parentId="globals" symbolId="Util" type="class"/>
-<dataEntry offset="2601" parentId="globals" symbolId="AareGuruData" type="class"/>
+<dataEntry offset="789" parentId="globals" symbolId="AareData" type="class"/>
+<dataEntry offset="932" parentId="globals" symbolId="AareGlanceView" type="class"/>
+<dataEntry offset="2009" parentId="globals" symbolId="AareGuruModel" type="class"/>
+<dataEntry offset="2096" parentId="globals" symbolId="AareView" type="class"/>
+<dataEntry offset="2231" parentId="globals" symbolId="Rez" type="module"/>
+<dataEntry offset="2310" parentId="Rez" symbolId="Drawables" type="module"/>
+<dataEntry offset="2349" parentId="Rez" symbolId="Menus" type="module"/>
+<dataEntry offset="2380" parentId="Rez" symbolId="Fonts" type="module"/>
+<dataEntry offset="2411" parentId="Rez" symbolId="Layouts" type="module"/>
+<dataEntry offset="2442" parentId="Rez" symbolId="JsonData" type="module"/>
+<dataEntry offset="2473" parentId="Rez" symbolId="Strings" type="module"/>
+<dataEntry offset="2616" parentId="globals" symbolId="Util" type="class"/>
+<dataEntry offset="2671" parentId="globals" symbolId="AareGuruData" type="class"/>
 </dataEntryOffsetMappings>
 <functions>
 <functionEntry accessMode="public" name="initialize" parent="AareGuruModel">
@@ -430,6 +462,10 @@
 <documentation/>
 </functionEntry>
 <functionEntry accessMode="public" name="fromJson" parent="AareSchwummModel">
+<param id="data"/>
+<documentation/>
+</functionEntry>
+<functionEntry accessMode="public" name="fromText" parent="AareSchwummModel">
 <param id="data"/>
 <documentation/>
 </functionEntry>

@@ -6,10 +6,11 @@ using Toybox.WatchUi;
 (:glance)
 class AareData {
 	
-	var timestamp;
-	var temperature;
-	var flow;
-	var height;
+	var timestamp = 0;
+	var temperature = 0;
+	var flow = 0;
+	var height = 0;
+	var forecast2h = 0;
 
 
 	// assign a specific color depending on the temperature range
@@ -18,16 +19,20 @@ class AareData {
 		var color = Graphics.COLOR_WHITE;
 		if ( t < 16 ) {
 			color = Graphics.COLOR_BLUE;
-		} else if (t >= 16 and t < 18) {
+		} else if (t >= 16 and t < 17) {
+			color = 0x00AAFF;
+		} else if (t >= 17 and t < 18) {
 			color = Graphics.COLOR_GREEN;
-		} else if (t >= 18 and t < 20) {
+		} else if (t >= 18 and t < 19) {
+			color = 0x00FF00;		
+		} else if (t >= 29 and t < 20) {
 			color = Graphics.COLOR_YELLOW;
 		} else if (t >= 20 and t < 22) {
 			color = Graphics.COLOR_ORANGE;
 		} else if (t >= 22 ) {
 			color = Graphics.COLOR_RED;
 		}
-		
+
 		return color;
 	} 
 	
@@ -90,16 +95,23 @@ class AareData {
 (:glance)
 class AareSchwummModel {
 
-	// Aareschwumm JSON API
-	// See: https://aare.schwumm.ch/api/
+	// Aareschwumm JSON API (deprecated)
+	// See: https://aare.schwumm.ch/api/ 
 	// Example: {"date":1579456200,"temperature":6.2,"flow":49.86,"height":501.57,"temperature_text":"cold","source":"BAFU","timeformat":"unix"}
-	const URL = "https://aare.schwumm.ch/api/current?timeformat=unix";
+	// const URL = "https://aare.schwumm.ch/api/current?timeformat=unix";
 	
 	// Optional API
 	// BAFU hydrology data of rivers in Switzerland from hydrodaten.admin.ch.
 	// See: https://api.existenz.ch/docs/apiv1#/hydro/get_hydro_latest
 	// Location Bern_Schönausteg= 2135
 	// https://api.existenz.ch/apiv1/hydro/latest?locations=2135&parameters=temperature%2Cflow%2Cheight&format=table&app=AareTemperatur.widget&version=1.0
+	
+	// API: 
+	// API Doc: https://aareguru.existenz.ch/  and https://aareguru.existenz.ch/openapi/
+	// API: aareguru.existenz.ch/v2018/current
+	// Req: https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h%2Cweather.today.v.symt%2Cweather.today.n.symt%2Cweather.today.a.symt
+	const URL = "https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
+	// Resp: 1624896000\n18.2\n273\n18.4	
 	
 	var notify = null;
 	var message = "";
@@ -123,6 +135,32 @@ class AareSchwummModel {
 		
 		return aareData;
     }
+    
+    function fromText(data) {
+   		if (aareData == null) {
+        	aareData = new AareData();
+		}	
+		
+		var idx = data.find("\n");
+		if (idx != null) {
+			aareData.timestamp = data.substring(0, idx).toLong();
+			data = data.substring(idx+1, data.length());
+		}
+		idx = data.find("\n");
+		if (idx != null) {
+			aareData.temperature = data.substring(0, idx).toFloat();
+			data = data.substring(idx+1, data.length());
+		}
+		idx = data.find("\n");
+		if (idx != null) {
+			aareData.flow = data.substring(0, idx).toFloat();
+			data = data.substring(idx+1, data.length());
+			
+			aareData.forecast2h = data.toFloat();		
+		}
+		
+		return aareData;
+    }
  
     
     function makeAPIRequest() {
@@ -132,11 +170,12 @@ class AareSchwummModel {
 			var params = null;
        		var options = {
          			:method => Communications.HTTP_REQUEST_METHOD_GET,
-         			:responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON
+         			//:responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_JSON
+         			:responseType => Communications.HTTP_RESPONSE_CONTENT_TYPE_TEXT_PLAIN
          		};
          		
          	try {
-         	    System.println("AareSchwummModel Request: " + URL);	
+         	    // System.println("AareSchwummModel Request: " + URL);	
        			Communications.makeWebRequest(URL, params, options, method(:onResponse));
        			
        		} catch (e) {
@@ -154,10 +193,11 @@ class AareSchwummModel {
 
 
 	function onResponse(responseCode, data) {
-		System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
+		// System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
 		
 		if (responseCode == 200) {
-        	aareData = fromJson(data);
+        	//aareData = fromJson(data);
+        	aareData = fromText(data);
 			notify.invoke(aareData);
 		
 		} else { 

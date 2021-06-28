@@ -13,6 +13,8 @@
     <string id="flow_extremly">extrêmement</string>
     <string id="flow_flood">Inondation!</string>
     
+    <string id="water_level">D'EAU</string>
+    
     <string id="exception_communication_not_available">Aucun lien</string>
     <string id="exception_service_not_available">Pas de Service</string>
 
