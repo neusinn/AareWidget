@@ -18,13 +18,13 @@ class AareData {
 		var color = Graphics.COLOR_WHITE;
 		if ( t < 16 ) {
 			color = Graphics.COLOR_BLUE;
-		} else if (t >= 16 and t < 19) {
+		} else if (t >= 16 and t < 18) {
 			color = Graphics.COLOR_GREEN;
-		} else if (t >= 19 and t < 21) {
+		} else if (t >= 18 and t < 20) {
 			color = Graphics.COLOR_YELLOW;
-		} else if (t >= 21 and t < 23) {
+		} else if (t >= 20 and t < 22) {
 			color = Graphics.COLOR_ORANGE;
-		} else if (t >= 23 ) {
+		} else if (t >= 22 ) {
 			color = Graphics.COLOR_RED;
 		}
 		
@@ -79,7 +79,7 @@ class AareData {
 		if (flow < 200) { return WatchUi.loadResource(Rez.Strings.flow_rater_much);}
 		if (flow < 250) { return WatchUi.loadResource(Rez.Strings.flow_much);}
 		if (flow < 300) { return WatchUi.loadResource(Rez.Strings.flow_very_much);}
-		if (flow < 420) { return WatchUi.loadResource(Rez.Strings.flow_extremly);}
+		if (flow < 430) { return WatchUi.loadResource(Rez.Strings.flow_extremly);}
 		return WatchUi.loadResource(Rez.Strings.flow_flood); //Schadensgrenze überstiegen
 	}
 	    
