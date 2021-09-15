@@ -36,7 +36,7 @@ __View__
 - Garmin Fenix 6, 6Pro, 6S, 6X
 
 ## Data sources
-- Aareschwumm API (see description [here](http://aare.schwumm.ch/api/)).
+- [Aare Guru](https://aare.guru/) (API see description [here](https://aareguru.existenz.ch/).
 The API service is provided by [Bureau für digitale Existenz](https://bureau.existenz.ch/)
 - The base data is measured and provided by _Bundesamt für Umwelt, Verkehr Energie und Kommunikatione der Schweizerischen Eidgenossenschaft_, [Hydrologie](https://www.hydrodaten.admin.ch/de/index.html?lang=de)
 
