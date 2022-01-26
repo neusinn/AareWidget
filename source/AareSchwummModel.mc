@@ -17,6 +17,10 @@ class AareData {
 	function colorOfTemperature() {
 		var t = temperature;
 		var color = Graphics.COLOR_WHITE;
+
+		if (t==null) { 
+			return color; 
+		}
 		if ( t < 16 ) {
 			color = Graphics.COLOR_BLUE;
 		} else if (t >= 16 and t < 17) {
@@ -25,7 +29,7 @@ class AareData {
 			color = Graphics.COLOR_GREEN;
 		} else if (t >= 18 and t < 19) {
 			color = 0x00FF00;		
-		} else if (t >= 29 and t < 20) {
+		} else if (t >= 19 and t < 20) {
 			color = Graphics.COLOR_YELLOW;
 		} else if (t >= 20 and t < 22) {
 			color = Graphics.COLOR_ORANGE;
@@ -78,6 +82,9 @@ class AareData {
 	
 
 	function flowStr() {
+		if (flow==null) { 
+			return ""; // missing data
+		}
 		if (flow < 50) { return WatchUi.loadResource(Rez.Strings.flow_very_little);}
 		if (flow < 100) { return WatchUi.loadResource(Rez.Strings.flow_little);}
 		if (flow < 150) { return WatchUi.loadResource(Rez.Strings.flow_not_much);}
@@ -110,6 +117,8 @@ class AareSchwummModel {
 	// API Doc: https://aareguru.existenz.ch/  and https://aareguru.existenz.ch/openapi/
 	// API: aareguru.existenz.ch/v2018/current
 	// Req: https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h%2Cweather.today.v.symt%2Cweather.today.n.symt%2Cweather.today.a.symt
+	//const URL = "https://aareguru-test.existenz.ch/v2018/current?city=olten&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
+
 	const URL = "https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
 	// Resp: 1624896000\n18.2\n273\n18.4	
 	
@@ -141,21 +150,25 @@ class AareSchwummModel {
         	aareData = new AareData();
 		}	
 		
+		// timestamp
 		var idx = data.find("\n");
 		if (idx != null) {
 			aareData.timestamp = data.substring(0, idx).toLong();
 			data = data.substring(idx+1, data.length());
 		}
+		// temperature
 		idx = data.find("\n");
 		if (idx != null) {
 			aareData.temperature = data.substring(0, idx).toFloat();
 			data = data.substring(idx+1, data.length());
 		}
+		// flow
 		idx = data.find("\n");
 		if (idx != null) {
 			aareData.flow = data.substring(0, idx).toFloat();
 			data = data.substring(idx+1, data.length());
 			
+			// forcast2h
 			aareData.forecast2h = data.toFloat();		
 		}
 		

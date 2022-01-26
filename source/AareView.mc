@@ -53,16 +53,17 @@ class AareView extends UI.View {
 	   		y = y + G.getFontHeight(G.FONT_SYSTEM_NUMBER_HOT);
 
 			// Aare flow
-			dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
-	        //dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flow.format("%0i")  + "m³/s", G.TEXT_JUSTIFY_CENTER);  
-			dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flowStr(), G.TEXT_JUSTIFY_CENTER);
-			dc.drawText(width/2, y+ G.getFontHeight(G.FONT_SYSTEM_LARGE), G.FONT_SYSTEM_XTINY, sWaterLevel, G.TEXT_JUSTIFY_CENTER);
-				        
+			if (aareData.flow != null) {
+				dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
+				//dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flow.format("%0i")  + "m³/s", G.TEXT_JUSTIFY_CENTER);  
+				dc.drawText(width/2, y, G.FONT_SYSTEM_LARGE, aareData.flowStr(), G.TEXT_JUSTIFY_CENTER);
+				dc.drawText(width/2, y+ G.getFontHeight(G.FONT_SYSTEM_LARGE), G.FONT_SYSTEM_XTINY, sWaterLevel, G.TEXT_JUSTIFY_CENTER);
+			}      
 			if (! aareData.isActual()) {
 				dc.setColor(G.COLOR_ORANGE, G.COLOR_TRANSPARENT);
 				dc.drawText(width/2, height - 40, G.FONT_SYSTEM_TINY, aareData.messureDate(), G.TEXT_JUSTIFY_CENTER);  			
 			} else {
-				if (aareData.forecast2h != 0) {
+				if (aareData.forecast2h != 0 && aareData.forecast2h != null ) {
 			    	dc.setColor(aareData.colorOfTemperature(), G.COLOR_TRANSPARENT);
 					dc.drawText(width/2, height - 50, G.FONT_SYSTEM_TINY, aareData.forecast2h.format("%0.1f") + "°C in 2h", G.TEXT_JUSTIFY_CENTER);  
 				}
