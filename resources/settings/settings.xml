@@ -1,0 +1,14 @@
+<settings>
+	<setting propertyKey = "@Properties.propCity" title = "@Strings.propCityTitle">
+		<settingConfig type="list">
+            <listEntry value="0">@Strings.propCityBern</listEntry>
+            <listEntry value="1">@Strings.propCityBiel</listEntry>
+            <listEntry value="2">@Strings.propCityThun</listEntry>
+            <listEntry value="3">@Strings.propCityBrienz</listEntry>
+            <listEntry value="4">@Strings.propCityInterlaken</listEntry>
+            <listEntry value="5">@Strings.propCityBrugg</listEntry>
+            <listEntry value="6">@Strings.propCityOlten</listEntry>
+            <listEntry value="7">@Strings.propCityHagneck</listEntry>
+        </settingConfig>
+    </setting>
+</settings>

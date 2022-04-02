@@ -18,4 +18,13 @@
     <string id="exception_communication_not_available">Aucun lien</string>
     <string id="exception_service_not_available">Pas de Service</string>
 
+    <string id="propCityTitle">Station de mesure</string>
+    <string id="propCityBern">Berne</string>
+    <string id="propCityBiel">Bienne</string>
+    <string id="propCityThun">Thun</string>
+    <string id="propCityBrienz">Brienz</string>
+    <string id="propCityInterlaken">Interlaken</string>
+    <string id="propCityBrugg">Brugg</string>
+    <string id="propCityOlten">Olten</string>
+    <string id="propCityHagneck">Hagneck</string>
 </strings>

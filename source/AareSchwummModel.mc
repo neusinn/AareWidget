@@ -11,6 +11,7 @@ class AareData {
 	var flow = 0;
 	var height = 0;
 	var forecast2h = 0;
+	var city = "";
 
 
 	// assign a specific color depending on the temperature range
@@ -94,7 +95,18 @@ class AareData {
 		if (flow < 430) { return WatchUi.loadResource(Rez.Strings.flow_extremly);}
 		return WatchUi.loadResource(Rez.Strings.flow_flood); //Schadensgrenze überstiegen
 	}
-	    
+
+	function cityStr() {
+		if (city == "bern") { return WatchUi.loadResource(Rez.Strings.propCityBern);}
+		if (city == "biel") { return WatchUi.loadResource(Rez.Strings.propCityBiel);}
+		if (city == "brienz") { return WatchUi.loadResource(Rez.Strings.propCityBrienz);}
+		if (city == "thun") { return WatchUi.loadResource(Rez.Strings.propCityThun);}
+		if (city == "interlaken") { return WatchUi.loadResource(Rez.Strings.propCityInterlaken);}
+		if (city == "brugg") { return WatchUi.loadResource(Rez.Strings.propCityBrugg);}
+		if (city == "olten") { return WatchUi.loadResource(Rez.Strings.propCityOlten);}
+		if (city == "hagneck") { return WatchUi.loadResource(Rez.Strings.propCityHagneck);}
+		return WatchUi.loadResource(Rez.Strings.propCityBern);
+	} 
 }
 
 
@@ -119,25 +131,48 @@ class AareSchwummModel {
 	// Req: https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h%2Cweather.today.v.symt%2Cweather.today.n.symt%2Cweather.today.a.symt
 	//const URL = "https://aareguru-test.existenz.ch/v2018/current?city=olten&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
 
-	const URL = "https://aareguru.existenz.ch/v2018/current?city=olten&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
+	var URL = "https://aareguru.existenz.ch/v2018/current?version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
 	// Resp: 1624896000\n18.2\n273\n18.4
 	// Resp. values: timestamp,temperature,flow,forecast2h
 	
+	var city;
 	var notify = null;
 	var message = "";
 	var aareData = null;
 	
 
 	function initialize(handler) {
+		city = getCityProperty();
+		//System.println("City = " + city);
+		URL = URL + "&" + city;
 		notify = handler;
 		makeAPIRequest();
 	}
 	
+	function getCityProperty() {
+		var propCity;
+		var city;
+
+		// Read property city (default = "bern")
+		propCity = Application.Properties.getValue("propCity");
+		if (propCity==0) { city = "bern";
+		} else if (propCity==1) { city = "biel";
+		} else if (propCity==2) { city = "thun";
+		} else if (propCity==3) { city = "brienz";
+		} else if (propCity==4) { city = "interlaken";
+		} else if (propCity==5) { city = "brugg";
+		} else if (propCity==6) { city = "olten";
+		} else if (propCity==7) { city = "hagneck";
+		} else {city = "bern"; 
+		}
+		return city;
+	}
 
     function fromJson(data) {
    		if (aareData == null) {
         	aareData = new AareData();
-		}	
+			aareData.city = city;
+		}
 		aareData.temperature = data.get("temperature").toFloat();
 		aareData.flow = data.get("flow").toFloat();
 		aareData.height = data.get("height").toFloat();
@@ -149,6 +184,7 @@ class AareSchwummModel {
     function fromText(data) {
    		if (aareData == null) {
         	aareData = new AareData();
+			aareData.city = city;
 		}	
 		
 		// timestamp
@@ -227,5 +263,4 @@ class AareSchwummModel {
     	return aareData;
     }  
 
-       
 }

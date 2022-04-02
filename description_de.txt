@@ -1,0 +1,38 @@
+
+*** Description ***
+
+Urban Swimming ist in Bern populär. Es ist ein einmaliges Erlebnis in der Aare durch die Bundeshauptstadt zu schwimmen.
+(!) Achtung baden in der Aare ist gefährlich und nur für geübte Schwimmer geeignet.
+
+Dieses Widget zeigt die aktuelle Wassertemperatur der Aare und macht eine Prognose in 2 Stunden.
+
+Um die Temperatur zu ermitteln zu können braucht die Uhr eine Verbindung zum Internet, d.h. eine Bluetooth-Verbindung zu einem Telefon das den Zugang zum Internet ermöglicht.
+
+Mögliche Fehlermeldungen:
+-- x -- : Keine Verbindung (Es kann keine Verbindung zum Internet gemacht werden. Mögliche Gründe: Kein verbundenes Telefon in der Nähe, Bluetooth ausgeschaltet oder Verbindung nicht möglich.
+~ n/a ~ : Kein Service verfügbar
+
+Einstellungen / App-Settings:
+- Messtation einstellbar für Städte: Bern, Biel, Thun, Interlaken, Brienz, Olten, Brugg, Olten, Hagneck. default = Bern
+Anleitung siehe: 
+    deutsch: https://support.garmin.com/de-CH/?faq=SPo0TFvhQO04O36Y5TYRh5
+    francais: https://support.garmin.com/fr-CH/?faq=SPo0TFvhQO04O36Y5TYRh5
+    english: https://forums.garmin.com/developer/connect-iq/w/wiki/14/changing-connect-iq-app-settings
+
+
+Kredits:
+- Die benutzte API ist freundlicherweise von Büro für digitale Existenz zur Verfügung gestellt: https://api.existenz.ch/
+- Die Hydrologischen Daten sind vom BAFU/FOEN (Bundesamt für Umwelt/Federal Office for the Environment) zur Verfügung gestellt. https://www.hydrodaten.admin.ch/
+
+Privacy:
+- Wir sammeln keine Daten. Die Berechtigung wird benötigt um die Aare Daten vom Internet zu laden.
+
+What’s New
+V 2.2.0 Neu Einstellbar für Städte: Bern, Biel, Thun, Interlaken, Brienz, Olten, Brugg, Olten, Hagneck. default = Bern
+V 2.1.0 Unterstütz neu fenix 7, fenix7S, fenix7X. Bug fix Farbe der Temperatur
+V 2.0.1 Major update:
+- Neue Datenquelle. Die Daten werden jetzt noch zuverlässiger angezeigt.
+- Viele neue Devices werden unterstützt.
+- Zusätzlich Prognose der Aaretemperatur in 2 Stunden.
+V 1.0.1 Bug Fix: Bei Hochwasser hat sich die App verschluckt und nur wenig Wasser angezeigt. Ab jetzt informieren wir richtig über sehr grosse Wassermengen.
+V 1.0.0 Bug Fix: Wenn die verfügbare Messdaten älter als 2 Std. war konnte dies in bestimmten Fällen zu Crash des Widget führen.
