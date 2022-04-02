@@ -41,10 +41,13 @@ class AareView extends UI.View {
 		dc.setColor(G.COLOR_WHITE, G.COLOR_TRANSPARENT);
         
 	    var y = 30;
-	    dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, sAppTitle, G.TEXT_JUSTIFY_CENTER);
-	    y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
+	    //dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, sAppTitle, G.TEXT_JUSTIFY_CENTER);
+	    //y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
         
         if (aareData != null) {
+
+			dc.drawText(width/2, y, G.FONT_SYSTEM_XTINY, "Aare " + aareData.cityStr(), G.TEXT_JUSTIFY_CENTER);
+	    	y = y + G.getFontHeight(G.FONT_SYSTEM_XTINY);
 
 	        dc.setColor(aareData.colorOfTemperature(), G.COLOR_TRANSPARENT);
 	        dc.drawText(width/2 - 10, y, G.FONT_SYSTEM_NUMBER_HOT, aareData.temperature.format("%0.1f"), G.TEXT_JUSTIFY_CENTER);

@@ -14,10 +14,11 @@ Mögliche Fehlermeldungen:
 
 Einstellungen / App-Settings:
 - Messtation einstellbar für Städte: Bern, Biel, Thun, Interlaken, Brienz, Olten, Brugg, Olten, Hagneck. default = Bern
+
 Anleitung siehe: 
     deutsch: https://support.garmin.com/de-CH/?faq=SPo0TFvhQO04O36Y5TYRh5
-    francais: https://support.garmin.com/fr-CH/?faq=SPo0TFvhQO04O36Y5TYRh5
-    english: https://forums.garmin.com/developer/connect-iq/w/wiki/14/changing-connect-iq-app-settings
+    französisch: https://support.garmin.com/fr-CH/?faq=SPo0TFvhQO04O36Y5TYRh5
+    englisch: https://forums.garmin.com/developer/connect-iq/w/wiki/14/changing-connect-iq-app-settings
 
 
 Kredits:
@@ -28,7 +29,8 @@ Privacy:
 - Wir sammeln keine Daten. Die Berechtigung wird benötigt um die Aare Daten vom Internet zu laden.
 
 What’s New
-V 2.2.0 Neu Einstellbar für Städte: Bern, Biel, Thun, Interlaken, Brienz, Olten, Brugg, Olten, Hagneck. default = Bern
+V 3.0.0 Neu Einstellbar für Städte: Bern, Biel, Thun, Interlaken, Brienz, Olten, Brugg, Olten, Hagneck. default = Bern
+V 2.3.0 Neue Geräte: epix2, enduro
 V 2.1.0 Unterstütz neu fenix 7, fenix7S, fenix7X. Bug fix Farbe der Temperatur
 V 2.0.1 Major update:
 - Neue Datenquelle. Die Daten werden jetzt noch zuverlässiger angezeigt.

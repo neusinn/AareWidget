@@ -11,7 +11,7 @@ class AareData {
 	var flow = 0;
 	var height = 0;
 	var forecast2h = 0;
-	var city = "";
+	var city = "bern";
 
 
 	// assign a specific color depending on the temperature range
@@ -19,23 +19,16 @@ class AareData {
 		var t = temperature;
 		var color = Graphics.COLOR_WHITE;
 
-		if (t==null) { 
+		if (t == null) { 
 			return color; 
 		}
-		if ( t < 16 ) {
-			color = Graphics.COLOR_BLUE;
-		} else if (t >= 16 and t < 17) {
-			color = 0x00AAFF;
-		} else if (t >= 17 and t < 18) {
-			color = Graphics.COLOR_GREEN;
-		} else if (t >= 18 and t < 19) {
-			color = 0x00FF00;		
-		} else if (t >= 19 and t < 20) {
-			color = Graphics.COLOR_YELLOW;
-		} else if (t >= 20 and t < 22) {
-			color = Graphics.COLOR_ORANGE;
-		} else if (t >= 22 ) {
-			color = Graphics.COLOR_RED;
+		if ( t < 16 ) { color = Graphics.COLOR_BLUE;
+		} else if (t >= 16 and t < 17) { color = 0x00AAFF;
+		} else if (t >= 17 and t < 18) { color = Graphics.COLOR_GREEN;
+		} else if (t >= 18 and t < 19) { color = 0x00FF00;		
+		} else if (t >= 19 and t < 20) { color = Graphics.COLOR_YELLOW;
+		} else if (t >= 20 and t < 22) { color = Graphics.COLOR_ORANGE;
+		} else { color = Graphics.COLOR_RED; 
 		}
 
 		return color;
@@ -86,7 +79,7 @@ class AareData {
 		if (flow==null) { 
 			return ""; // missing data
 		}
-		if (flow < 50) { return WatchUi.loadResource(Rez.Strings.flow_very_little);}
+		if (flow < 50)  { return WatchUi.loadResource(Rez.Strings.flow_very_little);}
 		if (flow < 100) { return WatchUi.loadResource(Rez.Strings.flow_little);}
 		if (flow < 150) { return WatchUi.loadResource(Rez.Strings.flow_not_much);}
 		if (flow < 200) { return WatchUi.loadResource(Rez.Strings.flow_rater_much);}
@@ -97,15 +90,22 @@ class AareData {
 	}
 
 	function cityStr() {
-		if (city == "bern") { return WatchUi.loadResource(Rez.Strings.propCityBern);}
-		if (city == "biel") { return WatchUi.loadResource(Rez.Strings.propCityBiel);}
-		if (city == "brienz") { return WatchUi.loadResource(Rez.Strings.propCityBrienz);}
-		if (city == "thun") { return WatchUi.loadResource(Rez.Strings.propCityThun);}
-		if (city == "interlaken") { return WatchUi.loadResource(Rez.Strings.propCityInterlaken);}
-		if (city == "brugg") { return WatchUi.loadResource(Rez.Strings.propCityBrugg);}
-		if (city == "olten") { return WatchUi.loadResource(Rez.Strings.propCityOlten);}
-		if (city == "hagneck") { return WatchUi.loadResource(Rez.Strings.propCityHagneck);}
-		return WatchUi.loadResource(Rez.Strings.propCityBern);
+		var cityStr;
+
+		switch (city) {
+			case "bern"       : cityStr = WatchUi.loadResource(Rez.Strings.propCityBern); break;
+			case "biel"       : cityStr = WatchUi.loadResource(Rez.Strings.propCityBiel); break;
+			case "brienz"     : cityStr = WatchUi.loadResource(Rez.Strings.propCityBrienz); break;
+			case "thun"       : cityStr = WatchUi.loadResource(Rez.Strings.propCityThun); break;
+			case "interlaken" : cityStr = WatchUi.loadResource(Rez.Strings.propCityInterlaken); break;
+			case "brugg"      : cityStr = WatchUi.loadResource(Rez.Strings.propCityBrugg); break;
+			case "olten"      : cityStr = WatchUi.loadResource(Rez.Strings.propCityOlten); break;
+			case "hagneck"    : cityStr = WatchUi.loadResource(Rez.Strings.propCityHagneck); break;
+		
+			default: cityStr = WatchUi.loadResource(Rez.Strings.propCityBern);
+		}
+
+		return cityStr;
 	} 
 }
 
@@ -131,48 +131,43 @@ class AareSchwummModel {
 	// Req: https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h%2Cweather.today.v.symt%2Cweather.today.n.symt%2Cweather.today.a.symt
 	//const URL = "https://aareguru-test.existenz.ch/v2018/current?city=olten&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
 
-	var URL = "https://aareguru.existenz.ch/v2018/current?version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
+	const URL = "https://aareguru.existenz.ch/v2018/current?version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
 	// Resp: 1624896000\n18.2\n273\n18.4
 	// Resp. values: timestamp,temperature,flow,forecast2h
-	
-	var city;
+	var cityProperty = "bern";
 	var notify = null;
 	var message = "";
 	var aareData = null;
 	
 
 	function initialize(handler) {
-		city = getCityProperty();
-		//System.println("City = " + city);
-		URL = URL + "&" + city;
+		cityProperty = getCityProperty();
+		//System.println("City = " + cityProperty);
 		notify = handler;
 		makeAPIRequest();
 	}
 	
+	// return string of cityProperty. E.g. "bern"
 	function getCityProperty() {
-		var propCity;
-		var city;
+		// Read property propCity and convert to string(default = "bern")
+		var prop = Application.Properties.getValue("propCity");
 
-		// Read property city (default = "bern")
-		propCity = Application.Properties.getValue("propCity");
-		if (propCity==0) { city = "bern";
-		} else if (propCity==1) { city = "biel";
-		} else if (propCity==2) { city = "thun";
-		} else if (propCity==3) { city = "brienz";
-		} else if (propCity==4) { city = "interlaken";
-		} else if (propCity==5) { city = "brugg";
-		} else if (propCity==6) { city = "olten";
-		} else if (propCity==7) { city = "hagneck";
-		} else {city = "bern"; 
+		if (prop == 0) { return "bern";
+		} else if (prop == 1) { return "biel";
+		} else if (prop == 2) { return "thun";
+		} else if (prop == 3) { return "brienz";
+		} else if (prop == 5) { return "brugg";
+		} else if (prop == 6) { return "olten";
+		} else if (prop == 7) { return "hagneck";
+		} else { return "bern"; 
 		}
-		return city;
 	}
 
     function fromJson(data) {
    		if (aareData == null) {
         	aareData = new AareData();
-			aareData.city = city;
 		}
+		aareData.city = cityProperty;
 		aareData.temperature = data.get("temperature").toFloat();
 		aareData.flow = data.get("flow").toFloat();
 		aareData.height = data.get("height").toFloat();
@@ -184,9 +179,8 @@ class AareSchwummModel {
     function fromText(data) {
    		if (aareData == null) {
         	aareData = new AareData();
-			aareData.city = city;
-		}	
-		
+		}
+		aareData.city = cityProperty;
 		// timestamp
 		var idx = data.find("\n");
 		if (idx != null) {
@@ -217,6 +211,9 @@ class AareSchwummModel {
  
     
     function makeAPIRequest() {
+
+		var url = URL + "&city=" + cityProperty;
+
 		//Check if Communications is allowed for Widget usage
 		if (Toybox has :Communications) {
 			
@@ -228,8 +225,8 @@ class AareSchwummModel {
          		};
          		
          	try {
-         	    // System.println("AareSchwummModel Request: " + URL);	
-       			Communications.makeWebRequest(URL, params, options, method(:onResponse));
+         	    //System.println("AareSchwummModel Request: " + url);	
+       			Communications.makeWebRequest(url, params, options, method(:onResponse));
        			
        		} catch (e) {
        			System.println("Exception during WebRequest:" + e.getErrorMessage());
@@ -246,7 +243,7 @@ class AareSchwummModel {
 
 
 	function onResponse(responseCode, data) {
-		System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
+		//System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
 		
 		if (responseCode == 200) {
         	//aareData = fromJson(data);
