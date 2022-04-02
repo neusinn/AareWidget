@@ -119,8 +119,9 @@ class AareSchwummModel {
 	// Req: https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h%2Cweather.today.v.symt%2Cweather.today.n.symt%2Cweather.today.a.symt
 	//const URL = "https://aareguru-test.existenz.ch/v2018/current?city=olten&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
 
-	const URL = "https://aareguru.existenz.ch/v2018/current?city=bern&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
-	// Resp: 1624896000\n18.2\n273\n18.4	
+	const URL = "https://aareguru.existenz.ch/v2018/current?city=olten&version=aaretemperatur4garmin&values=aare.timestamp%2Caare.temperature%2Caare.flow%2Caare.forecast2h";
+	// Resp: 1624896000\n18.2\n273\n18.4
+	// Resp. values: timestamp,temperature,flow,forecast2h
 	
 	var notify = null;
 	var message = "";
@@ -170,6 +171,9 @@ class AareSchwummModel {
 			
 			// forcast2h
 			aareData.forecast2h = data.toFloat();		
+		} else {
+			// In case the station has no forecast data
+			aareData.forecast2h = null;
 		}
 		
 		return aareData;
@@ -206,7 +210,7 @@ class AareSchwummModel {
 
 
 	function onResponse(responseCode, data) {
-		// System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
+		System.println("AareSchwummModel.onResponse(), Code:" + responseCode + ", data:" + data);
 		
 		if (responseCode == 200) {
         	//aareData = fromJson(data);
