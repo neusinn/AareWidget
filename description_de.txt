@@ -29,6 +29,7 @@ Privacy:
 - Wir sammeln keine Daten. Die Berechtigung wird benötigt um die Aare Daten vom Internet zu laden.
 
 What’s New
+V 3.1.0 Unterstütz neu venu2, venu2plus, venu2s, d2airx10
 V 3.0.0 Neu Einstellbar für Städte: Bern, Biel, Thun, Interlaken, Brienz, Olten, Brugg, Olten, Hagneck. default = Bern
 V 2.3.0 Neue Geräte: epix2, enduro
 V 2.1.0 Unterstütz neu fenix 7, fenix7S, fenix7X. Bug fix Farbe der Temperatur

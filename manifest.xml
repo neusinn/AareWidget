@@ -4,6 +4,7 @@
     <iq:application entry="AareApp" id="2869a28cab82472d94ef5ad190115859" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="3.0.0" name="@Strings.AppName" type="widget" version="2.0.0">
         <iq:products>
             <iq:product id="d2air"/>
+            <iq:product id="d2airx10"/>
             <iq:product id="d2delta"/>
             <iq:product id="d2deltapx"/>
             <iq:product id="d2deltas"/>
@@ -40,6 +41,9 @@
             <iq:product id="marqexpedition"/>
             <iq:product id="marqgolfer"/>
             <iq:product id="venu"/>
+            <iq:product id="venu2"/>
+            <iq:product id="venu2plus"/>
+            <iq:product id="venu2s"/>
             <iq:product id="venud"/>
             <iq:product id="venusq"/>
             <iq:product id="venusqm"/>
